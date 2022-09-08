@@ -1,0 +1,2701 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>HOI | Alex的博客</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://alex551781.github.io//favicon.ico?v=1662599935526">
+<link rel="stylesheet" href="https://alex551781.github.io//styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="HOI-Learning-List
+Some recent (2015-now) Human-Object Interaction Learing studies. If you find any errors or problems, p..." />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://alex551781.github.io/">
+        <img src="https://alex551781.github.io//images/avatar.png?v=1662599935526" class="site-logo">
+        <h1 class="site-title">Alex的博客</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      簌簌秋风起，悠悠行万里！
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://alex551781.github.io//atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">HOI</h2>
+            <div class="post-date">2022-09-07</div>
+            
+            <div class="post-content" v-pre>
+              <h1 id="hoi-learning-list">HOI-Learning-List</h1>
+<p>Some recent (2015-now) Human-Object Interaction Learing studies. If you find any errors or problems, please feel free to comment.</p>
+<p>A list of Transfomer-based vision works: https://github.com/DirtyHarryLYL/Transformer-in-Vision.</p>
+<h2 id="datasetbenchmark">Dataset/Benchmark</h2>
+<ul>
+<li>
+<p>Bongard-HOI <a href="https://arxiv.org/pdf/2205.13803.pdf">[Paper]</a>, <a href="https://github.com/NVlabs/Bongard-HOI">[Code]</a></p>
+</li>
+<li>
+<p>SWiG-HOI, <a href="https://openaccess.thecvf.com/content/ICCV2021/papers/Wang_Discovering_Human_Interactions_With_Large-Vocabulary_Objects_via_Query_and_Multi-Scale_ICCV_2021_paper.pdf">[Paper]</a>, <a href="https://github.com/scwangdyd/large_vocabulary_hoi_detection">[Website]</a></p>
+</li>
+<li>
+<p>New Metric: mPD, <a href="https://arxiv.org/pdf/2202.09492.pdf">[Paper]</a>, <a href="https://github.com/Foruck/OC-Immunity">[Code]</a></p>
+</li>
+<li>
+<p>DIABOLO <a href="https://arxiv.org/pdf/2201.02396.pdf">[Paper]</a>, <a href="https://kalisteo.cea.fr/">[Website]</a></p>
+</li>
+<li>
+<p>HOI-COCO (CVPR2021) <a href="https://github.com/zhihou7/HOI-CL">[Website]</a></p>
+</li>
+<li>
+<p>PaStaNet-HOI (TPAMI2021) <a href="https://github.com/DirtyHarryLYL/Transferable-Interactiveness-Network/tree/master/PaStaNet-HOI_Benckmark">[Benchmark]</a></p>
+</li>
+<li>
+<p>HAKE (CVPR2020) <a href="https://t.co/hXiAYPXEuL?amp=1">[YouTube]</a> <a href="https://www.bilibili.com/video/BV1s54y1Y76s">[bilibili]</a> <a href="http://hake-mvig.cn/home/">[Website]</a> <a href="https://arxiv.org/pdf/2004.00945.pdf">[Paper]</a> <a href="https://github.com/DirtyHarryLYL/HAKE-Action-Torch">[HAKE-Action-Torch]</a> <a href="https://github.com/DirtyHarryLYL/HAKE-Action">[HAKE-Action-TF]</a></p>
+</li>
+<li>
+<p>Ambiguous-HOI (CVPR2020) <a href="https://github.com/DirtyHarryLYL/DJ-RN">[Website]</a> <a href="https://arxiv.org/pdf/2004.08154.pdf">[Paper]</a></p>
+</li>
+<li>
+<p>HICO-DET (WACV2018) <a href="http://www-personal.umich.edu/~ywchao/hico/">[Website]</a> <a href="http://www-personal.umich.edu/~ywchao/publications/chao_wacv2018.pdf">[Paper]</a></p>
+</li>
+<li>
+<p>HCVRD (AAAI2018) <a href="https://bitbucket.org/jingruixiaozhuang/hcvrd-a-benchmark-for-large-scale-human-centered-visual/src/master/">[Website]</a> <a href="https://pdfs.semanticscholar.org/c94f/1aaf62f87d97dd579cb6451cb9149fb4967d.pdf">[Paper]</a></p>
+</li>
+<li>
+<p>V-COCO (May 2015) <a href="https://github.com/s-gupta/v-coco">[Website]</a> <a href="https://arxiv.org/pdf/1505.04474.pdf">[Paper]</a></p>
+</li>
+<li>
+<p>HICO (ICCV2015) <a href="http://www-personal.umich.edu/~ywchao/hico/">[Website]</a> <a href="http://www-personal.umich.edu/~ywchao/publications/chao_iccv2015.pdf">[Paper]</a></p>
+</li>
+<li>
+<p>OpenImage <a href="https://visualgenome.org/">[Website]</a> <a href="https://arxiv.org/abs/1602.07332">[Paper]</a></p>
+</li>
+<li>
+<p>PIC <a href="http://picdataset.com/challenge/index/">[Website]</a></p>
+</li>
+</ul>
+<p>More...</p>
+<h3 id="video-hoi-datasets">Video HOI Datasets</h3>
+<ul>
+<li>
+<p>VidHOI <a href="https://arxiv.org/pdf/2105.11731.pdf">[Paper]</a></p>
+</li>
+<li>
+<p>AVA <a href="http://research.google.com/ava/">[Website]</a>, HOIs (human-object, human-human) and pose (body motion) actions</p>
+</li>
+<li>
+<p>Action Genome <a href="https://www.actiongenome.org/">[Website]</a>, action verbs and spatial relationships</p>
+</li>
+<li>
+<p>CAD120 <a href="https://arxiv.org/pdf/1210.1207.pdf">[Paper]</a>, <a href="http://pr.cs.cornell.edu/humanactivities/">[Website]</a></p>
+</li>
+<li>
+<p>Sth-else <a href="https://arxiv.org/abs/1912.09930">[Paper]</a>, <a href="https://github.com/joaanna/something_else">[Website]</a></p>
+</li>
+</ul>
+<h2 id="method">Method</h2>
+<h3 id="hoi-image-generation">HOI Image Generation</h3>
+<ul>
+<li>
+<p>Exploiting Relationship for Complex-scene Image Generation (arXiv 2021.04) <a href="https://arxiv.org/pdf/2104.00356.pdf">[Paper]</a></p>
+</li>
+<li>
+<p>Specifying Object Attributes and Relations in Interactive Scene Generation (arXiv 2019.11) <a href="https://arxiv.org/pdf/1909.05379.pdf">[Paper]</a></p>
+</li>
+</ul>
+<h3 id="hoi-recognition-image-based-to-recognize-all-the-hois-in-one-image">HOI Recognition: Image-based, to recognize all the HOIs in one image.</h3>
+<ul>
+<li>
+<p>RelViT (ICLR'22) <a href="https://arxiv.org/pdf/2204.11167.pdf">[Paper]</a>, <a href="https://github.com/NVlabs/RelViT">[Code]</a></p>
+</li>
+<li>
+<p>DEFR (arXiv 2021.12) <a href="https://arxiv.org/pdf/2112.06392.pdf">[Paper]</a></p>
+</li>
+<li>
+<p>Interaction Compass (ICCV 2021) <a href="https://openaccess.thecvf.com/content/ICCV2021/papers/Huynh_Interaction_Compass_Multi-Label_Zero-Shot_Learning_of_Human-Object_Interactions_via_Spatial_ICCV_2021_paper.pdf">[Paper]</a></p>
+</li>
+<li>
+<p>DEFR-CLIP (arXiv 2021.07) <a href="https://arxiv.org/pdf/2107.13083.pdf">[Paper]</a></p>
+</li>
+<li>
+<p>PaStaNet: Toward Human Activity Knowledge Engine<br>
+(CVPR2020) <a href="https://github.com/DirtyHarryLYL/HAKE-Action/tree/Image-level-HAKE-Action">[Code]</a> <a href="https://github.com/DirtyHarryLYL/HAKE">[Data]</a> <a href="https://arxiv.org/pdf/2004.00945.pdf">[Paper]</a> <a href="https://t.co/hXiAYPXEuL?amp=1">[YouTube]</a> <a href="https://www.bilibili.com/video/BV1s54y1Y76s">[bilibili]</a></p>
+</li>
+<li>
+<p>Pairwise (ECCV2018) <a href="http://openaccess.thecvf.com/content_ECCV_2018/papers/Haoshu_Fang_Pairwise_Body-Part_Attention_ECCV_2018_paper.pdf">[Paper]</a></p>
+</li>
+<li>
+<p>Attentional Pooling for Action Recognition (NIPS2017) <a href="https://github.com/rohitgirdhar/AttentionalPoolingAction">[Code]</a> <a href="https://arxiv.org/pdf/1711.01467.pdf">[Paper]</a></p>
+</li>
+<li>
+<p>Learning Models for Actions and Person-Object Interactions with Transfer to Question Answering (ECCV2016) <a href="https://uofi.box.com/s/yflrqbser1r5m3iez1satkprawmsouag">[Code]</a> <a href="https://arxiv.org/pdf/1604.04808.pdf">[Paper]</a></p>
+</li>
+<li>
+<p>Contextual Action Recognition with R*CNN (ICCV2015) <a href="https://github.com/gkioxari/RstarCNN">[Code]</a> <a href="https://arxiv.org/pdf/1505.01197.pdf">[Paper]</a></p>
+</li>
+<li>
+<p>HOCNN (ICCV2015) <a href="https://github.com/ywchao/hico_benchmark">[Code]</a> <a href="http://www-personal.umich.edu/~ywchao/publications/chao_iccv2015.pdf">[Paper]</a></p>
+</li>
+<li>
+<p>SGAP-Net (AAAI2020) <a href="https://aaai.org/Papers/AAAI/2020GB/AAAI-JiZ.4799.pdf">[Paper]</a></p>
+</li>
+</ul>
+<p>More...</p>
+<h4 id="unseen-or-zero-shot-learning-image-level-recognition">Unseen or zero-shot learning (image-level recognition).</h4>
+<ul>
+<li>
+<p>ICompass (ICCV2021) <a href="https://hbdat.github.io/pubs/iccv21_relation_direction_final.pdf">[Paper]</a>, <a href="https://github.com/hbdat/iccv21_relational_direction">[Code]</a></p>
+</li>
+<li>
+<p>Compositional Learning for Human Object Interaction (ECCV2018) <a href="http://openaccess.thecvf.com/content_ECCV_2018/papers/Keizo_Kato_Compositional_Learning_of_ECCV_2018_paper.pdf">[Paper]</a></p>
+</li>
+<li>
+<p>Zero-Shot Human-Object Interaction Recognition via Affordance Graphs (Sep. 2020) <a href="https://arxiv.org/pdf/2009.01039.pdf">[Paper]</a></p>
+</li>
+</ul>
+<p>More...</p>
+<h3 id="hoi-detection-instance-based-to-detect-the-human-object-pairs-and-classify-the-interactions">HOI Detection: Instance-based, to detect the human-object pairs and classify the interactions.</h3>
+<ul>
+<li>
+<p>PartMap (ECCV2022), <a href="https://arxiv.org/pdf/2207.14192v1.pdf">[Paper]</a>, <a href="https://github.com/enlighten0707/Body-Part-Map-for-Interactiveness">[Code]</a></p>
+</li>
+<li>
+<p>K-BAN (arXiv 2022), <a href="https://arxiv.org/pdf/2207.07979.pdf">[Paper]</a></p>
+</li>
+<li>
+<p>SGCN4HOI (arXiv 2022), <a href="https://arxiv.org/pdf/2207.05733.pdf">[Paper]</a></p>
+</li>
+<li>
+<p>HQM (ECCV 2022), <a href="https://arxiv.org/pdf/2207.05293.pdf">[Paper]</a>, <a href="https://github.com/MuchHair/HQM">[Code]</a></p>
+</li>
+<li>
+<p>ODM (arXiv 2022), <a href="https://arxiv.org/pdf/2207.02400.pdf">[Paper]</a></p>
+</li>
+<li>
+<p>SDT (arXiv 2022), <a href="https://arxiv.org/pdf/2207.01869.pdf">[Paper]</a></p>
+</li>
+<li>
+<p>DOQ (CVPR 2022), <a href="https://openaccess.thecvf.com/content/CVPR2022/papers/Qu_Distillation_Using_Oracle_Queries_for_Transformer-Based_Human-Object_Interaction_Detection_CVPR_2022_paper.pdf">[Paper]</a>, <a href="https://github.com/SherlockHolmes221/DOQ">[Code]</a></p>
+</li>
+<li>
+<p>STIP (CVPR 2022), <a href="https://openaccess.thecvf.com/content/CVPR2022/papers/Zhang_Exploring_Structure-Aware_Transformer_Over_Interaction_Proposals_for_Human-Object_Interaction_Detection_CVPR_2022_paper.pdf">[Paper]</a></p>
+</li>
+<li>
+<p>DT (CVPR 2022), <a href="https://arxiv.org/pdf/2204.09290.pdf">[Paper]</a></p>
+</li>
+<li>
+<p>IF (CVPR 2022), <a href="https://arxiv.org/pdf/2204.07718.pdf">[Paper]</a>, <a href="https://github.com/Foruck/Interactiveness-Field">[Code]</a></p>
+</li>
+<li>
+<p>CPC (CVPR 2022), <a href="https://arxiv.org/pdf/2204.04836.pdf">[Paper]</a>, <a href="https://github.com/mlvlab/CPChoi">[Code]</a></p>
+</li>
+<li>
+<p>CATN (arXiv 2022), <a href="https://arxiv.org/pdf/2204.04911.pdf">[Paper]</a></p>
+</li>
+<li>
+<p>SSRT (CVPR 2022), <a href="https://arxiv.org/pdf/2204.00746.pdf">[Paper]</a></p>
+</li>
+<li>
+<p>GEN-VLKT (CVPR 2022), <a href="https://arxiv.org/pdf/2203.13954.pdf">[Paper]</a>, <a href="https://github.com/YueLiao/gen-vlkt">[Code]</a></p>
+</li>
+<li>
+<p>MSTR (CVPR 2022), <a href="https://arxiv.org/pdf/2203.14709.pdf">[Paper]</a></p>
+</li>
+<li>
+<p>Iwin (arXiv 2022.3), <a href="https://arxiv.org/pdf/2203.10537.pdf">[Paper]</a></p>
+</li>
+<li>
+<p>RGBM (arXiv 2022.2), <a href="https://arxiv.org/pdf/2202.11998.pdf">[Paper]</a></p>
+</li>
+<li>
+<p>GPV-2 (arXiv 2022.2), <a href="https://arxiv.org/pdf/2202.02317.pdf">[Paper]</a>, <a href="https://prior.allenai.org/projects/gpv2">[Project]</a></p>
+</li>
+<li>
+<p>OC-Immunity (AAAI 2022) <a href="https://arxiv.org/pdf/2202.09492.pdf">[Paper]</a>, <a href="https://github.com/Foruck/OC-Immunity">[Code]</a></p>
+</li>
+<li>
+<p>OCN (AAAI 2022) <a href="https://arxiv.org/pdf/2202.00259.pdf">[Paper]</a>, <a href="https://github.com/JacobYuan7/OCN-HOI-Benchmark">[Code]</a></p>
+</li>
+<li>
+<p>QAHOI (arXiv 2021) <a href="https://arxiv.org/pdf/2112.08647.pdf">[Paper]</a>, <a href="https://github.com/cjw2021/QAHOI">[Code]</a></p>
+</li>
+<li>
+<p>PhraseHOI (AAAI 2022) <a href="https://arxiv.org/pdf/2112.07383.pdf">[Paper]</a></p>
+</li>
+<li>
+<p>DEFR (arXiv 2021.12) <a href="https://arxiv.org/pdf/2112.06392.pdf">[Paper]</a></p>
+</li>
+<li>
+<p>UPT (arXiv 2021) <a href="https://arxiv.org/pdf/2112.01838.pdf">[Paper]</a>, <a href="https://github.com/fredzzhang/upt">[Code]</a></p>
+</li>
+<li>
+<p>HRNet (TIP 2021) <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=9552553">[Paper]</a></p>
+</li>
+<li>
+<p>ACP++ (TIP 2021) <a href="https://arxiv.org/pdf/2109.04047.pdf">[Paper]</a>, <a href="https://github.com/Dong-JinKim/ActionCooccurrencePriors/">[Code]</a></p>
+</li>
+<li>
+<p>SG2HOI (ICCV 2021) <a href="https://arxiv.org/pdf/2108.08584.pdf">[Paper]</a></p>
+</li>
+<li>
+<p>CDN (NeurIPS 2021) <a href="https://arxiv.org/pdf/2108.05077.pdf">[Paper]</a>, <a href="https://github.com/YueLiao/CDN">[Code]</a></p>
+</li>
+<li>
+<p>GTNet (arXiv 2021.8) <a href="https://arxiv.org/pdf/2108.00596.pdf">[Paper]</a>, <a href="https://github.com/UCSB-VRL/GTNet">[Code]</a></p>
+</li>
+<li>
+<p>HOI-MO-Net (IVC 2021) <a href="https://www.sciencedirect.com/science/article/pii/S0262885621001670?via%3Dihub#tbl0005">[Paper]</a></p>
+</li>
+<li>
+<p>IPGN (TIP 2021.7) <a href="https://ieeexplore.ieee.org/document/9489275">[Paper]</a></p>
+</li>
+<li>
+<p>SCG (ICCV 2021, SAG, v2) <a href="https://arxiv.org/pdf/2012.06060.pdf">[Paper]</a>, <a href="https://github.com/fredzzhang/spatially-conditioned-graphs">[Code]</a></p>
+</li>
+<li>
+<p>Human Object Interaction Detection using Two-Direction Spatial Enhancement and Exclusive Object Prior (arXiv) <a href="https://arxiv.org/pdf/2105.03089.pdf">[Paper]</a></p>
+</li>
+<li>
+<p>PST (ICCV2021) <a href="https://arxiv.org/pdf/2105.02170.pdf">[Paper]</a></p>
+</li>
+<li>
+<p>RR-Net (arXiv 2021.5) <a href="https://arxiv.org/pdf/2104.15015.pdf">[Paper]</a></p>
+</li>
+<li>
+<p>HOTR (CVPR2021) <a href="https://arxiv.org/pdf/2104.13682.pdf">[Paper]</a>, <a href="https://github.com/kakaobrain/HOTR">[Code]</a></p>
+</li>
+<li>
+<p>GGNet (CVPR2021) <a href="https://arxiv.org/pdf/2104.05269.pdf">[Paper]</a>, <a href="https://github.com/SherlockHolmes221/GGNet">[Code]</a></p>
+</li>
+<li>
+<p>ATL (CVPR2021) <a href="https://arxiv.org/pdf/2104.02867.pdf">[Paper]</a>, <a href="https://github.com/zhihou7/HOI-CL">[Code]</a></p>
+</li>
+<li>
+<p>FCL (CVPR2021) <a href="https://arxiv.org/pdf/2103.08214.pdf">[Paper]</a>, <a href="https://github.com/zhihou7/FCL">[Code]</a></p>
+</li>
+<li>
+<p>AS-Net (CVPR2021) <a href="https://arxiv.org/pdf/2103.05983.pdf">[Paper]</a>, <a href="https://github.com/yoyomimi/AS-Net">[Code]</a></p>
+</li>
+<li>
+<p>End-to-End Human Object Interaction Detection with HOI Transformer (CVPR2021), <a href="https://arxiv.org/pdf/2103.04503.pdf">[Paper]</a>, <a href="https://github.com/bbepoch/HoiTransformer">[Code]</a></p>
+</li>
+<li>
+<p>QPIC (CVPR2021) <a href="https://arxiv.org/pdf/2103.05399.pdf">[Paper]</a>, <a href="https://github.com/hitachi-rd-cv/qpic">[Code]</a></p>
+</li>
+<li>
+<p>TIN (TPAMI2021) <a href="https://arxiv.org/pdf/2101.10292.pdf">[Paper]</a>, <a href="https://github.com/DirtyHarryLYL/Transferable-Interactiveness-Network">[Code]</a></p>
+</li>
+<li>
+<p>IDN (NeurIPS2020) <a href="https://arxiv.org/pdf/2010.16219.pdf">[Paper]</a> <a href="https://github.com/DirtyHarryLYL/HAKE-Action-Torch/tree/IDN-(Integrating-Decomposing-Network)">[Code]</a></p>
+</li>
+<li>
+<p>DIRV (AAAI2021) <a href="https://arxiv.org/pdf/2010.01005.pdf">[Paper]</a></p>
+</li>
+<li>
+<p>DecAug (AAAI2021) <a href="https://arxiv.org/pdf/2010.01007.pdf">[Paper]</a></p>
+</li>
+<li>
+<p>OSGNet (IEEE Access) <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9360596">[Paper]</a></p>
+</li>
+<li>
+<p>PFNet (CVM) <a href="https://link.springer.com/content/pdf/10.1007/s41095-020-0188-2.pdf">[Paper]</a></p>
+</li>
+<li>
+<p>UniDet (ECCV2020) <a href="http://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123600494.pdf">[Paper]</a></p>
+</li>
+<li>
+<p>DRG (ECCV2020) <a href="http://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123570681.pdf">[Paper]</a> <a href="https://github.com/vt-vl-lab/DRG">[Code]</a></p>
+</li>
+<li>
+<p>FCMNet (ECCV2020) <a href="http://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123590239.pdf">[Paper]</a></p>
+</li>
+<li>
+<p>Contextual Heterogeneous Graph Network for Human-Object Interaction Detection (ECCV2020) <a href="http://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123620239.pdf">[Paper]</a></p>
+</li>
+<li>
+<p>PD-Net (ECCV2020) <a href="https://www.researchgate.net/publication/343536295_Polysemy_Deciphering_Network_for_Human-Object_Interaction_Detection">[Paper-1]</a> <a href="https://arxiv.org/pdf/2008.02918.pdf">[Paper-2]</a> <a href="https://github.com/MuchHair/PD-Net">[Code]</a></p>
+</li>
+<li>
+<p>VCL (ECCV2020) <a href="https://arxiv.org/pdf/2007.12407.pdf">[Paper]</a> <a href="https://github.com/zhihou7/VCL">[Code]</a></p>
+</li>
+<li>
+<p>ACP (ECCV2020) <a href="https://arxiv.org/pdf/2007.08728.pdf">[Paper]</a> <a href="https://github.com/Dong-JinKim/ActionCooccurrencePriors/">[Code]</a></p>
+</li>
+<li>
+<p>ConsNet (ACMMM2020) <a href="https://arxiv.org/pdf/2008.06254.pdf">[Paper]</a> <a href="https://github.com/yeliudev/ConsNet">[Code]</a>, <strong>HICO-DET Python API</strong>: A general Python toolkit for the HICO-DET dataset, including APIs for data loading &amp; processing, human-object pair IoU &amp; NMS calculation, and standard evaluation. <a href="https://github.com/yeliudev/ConsNet">[Code]</a> <a href="https://consnet.readthedocs.io/">[Documentation]</a></p>
+</li>
+<li>
+<p>Action-Guided Attention Mining and Relation Reasoning Network for Human-Object Interaction Detection (IJCAI2020) <a href="https://www.ijcai.org/Proceedings/2020/0154.pdf">[Paper]</a></p>
+</li>
+<li>
+<p>PaStaNet (CVPR2020) <a href="https://github.com/DirtyHarryLYL/HAKE-Action/tree/Instance-level-HAKE-Action">[Code]</a> <a href="https://github.com/DirtyHarryLYL/HAKE">[Data]</a> <a href="https://arxiv.org/pdf/2004.00945.pdf">[Paper]</a> <a href="https://t.co/hXiAYPXEuL?amp=1">[YouTube]</a> <a href="https://www.bilibili.com/video/BV1s54y1Y76s">[bilibili]</a></p>
+</li>
+<li>
+<p>DJ-RN (CVPR2020) <a href="https://github.com/DirtyHarryLYL/DJ-RN">[Code]</a> <a href="https://arxiv.org/pdf/2004.08154.pdf">[Paper]</a></p>
+</li>
+<li>
+<p>Cascaded Human-Object Interaction Recognition (CVPR2020) <a href="https://github.com/tfzhou/C-HOI">[Code]</a> <a href="https://arxiv.org/pdf/2003.04262.pdf">[Paper]</a></p>
+</li>
+<li>
+<p>PPDM (CVPR2020) <a href="https://github.com/YueLiao/PPDM">[Code]</a> <a href="https://arxiv.org/pdf/1912.12898.pdf">[Paper]</a></p>
+</li>
+<li>
+<p>IP-Net (CVPR2020) <a href="https://github.com/vaesl/IP-Net">[Code]</a> <a href="https://arxiv.org/pdf/2003.14023.pdf">[Paper]</a></p>
+</li>
+<li>
+<p>VSGNet (CVPR2020) <a href="https://github.com/ASMIftekhar/VSGNet">[Code]</a> <a href="https://arxiv.org/pdf/2003.05541.pdf">[Paper]</a></p>
+</li>
+<li>
+<p>HOID (CVPR2020) <a href="https://github.com/scwangdyd/zero_shot_hoi">[Code]</a> <a href="https://cse.buffalo.edu/~jsyuan/papers/2020/05225.pdf">[Paper]</a></p>
+</li>
+<li>
+<p>Diagnosing Rarity in Human-Object Interaction Detection (CVPRW2020) <a href="https://arxiv.org/pdf/2006.05728.pdf">[Paper]</a></p>
+</li>
+<li>
+<p>MLCNet (ICMR2020) <a href="https://dl.acm.org/doi/pdf/10.1145/3372278.3390671">[Paper]</a></p>
+</li>
+<li>
+<p>SIGN (ICME2020) <a href="https://ieeexplore.ieee.org/ielx7/9099125/9102711/09102755.pdf">[Paper]</a></p>
+</li>
+<li>
+<p>In-GraphNet (IJCAI-PRICAI 2020) <a href="https://arxiv.org/pdf/2007.06925.pdf">[Paper]</a></p>
+</li>
+<li>
+<p>PMFNet(ICCV2019) <a href="https://github.com/bobwan1995/PMFNet">[Code]</a> <a href="https://arxiv.org/abs/1909.08453">[Paper]</a></p>
+</li>
+<li>
+<p>No-Frills (ICCV2019) <a href="https://github.com/BigRedT/no_frills_hoi_det">[Code]</a> <a href="http://tanmaygupta.info/assets/img/no_frills/paper.pdf">[Paper]</a></p>
+</li>
+<li>
+<p>Analogy (ICCV2019) <a href="https://github.com/jpeyre/analogy">[Code]</a> <a href="https://www.di.ens.fr/willow/research/analogy/paper.pdf">[Paper]</a></p>
+</li>
+<li>
+<p>RPNN (ICCV2019) <a href="http://openaccess.thecvf.com/content_ICCV_2019/papers/Zhou_Relation_Parsing_Neural_Network_for_Human-Object_Interaction_Detection_ICCV_2019_paper.pdf">[Paper]</a></p>
+</li>
+<li>
+<p>Deep Contextual Attention for Human-Object Interaction Detection (ICCV2019) <a href="http://openaccess.thecvf.com/content_ICCV_2019/papers/Wang_Deep_Contextual_Attention_for_Human-Object_Interaction_Detection_ICCV_2019_paper.pdf">[Paper]</a></p>
+</li>
+<li>
+<p>Interactiveness (CVPR2019) <a href="https://github.com/DirtyHarryLYL/Transferable-Interactiveness-Network">[Code]</a> <a href="https://arxiv.org/pdf/1811.08264.pdf">[Paper]</a></p>
+</li>
+<li>
+<p>Turbo (AAAI2019) <a href="https://arxiv.org/pdf/1903.06355.pdf">[Paper]</a></p>
+</li>
+<li>
+<p>GPNN (ECCV2018) <a href="https://github.com/SiyuanQi/gpnn">[Code]</a> <a href="https://arxiv.org/pdf/1808.07962.pdf">[Paper]</a></p>
+</li>
+<li>
+<p>iCAN (BMVC2018) <a href="https://github.com/vt-vl-lab/iCAN">[Code]</a> <a href="https://arxiv.org/pdf/1808.10437.pdf">[Paper]</a></p>
+</li>
+<li>
+<p>InteractNet (CVPR2018) <a href="https://arxiv.org/pdf/1704.07333.pdf">[Paper]</a></p>
+</li>
+<li>
+<p>Scaling Human-Object Interaction Recognition through Zero-Shot Learning (WACV2018) <a href="http://vision.stanford.edu/pdf/shen2018wacv.pdf">[Paper]</a></p>
+</li>
+<li>
+<p>HO-RCNN (WACV2018) <a href="https://github.com/ywchao/ho-rcnn">[Code]</a> <a href="http://www-personal.umich.edu/~ywchao/publications/chao_wacv2018.pdf">[Paper]</a></p>
+</li>
+<li>
+<p>VS-GATs (Mar. 2020) <a href="https://arxiv.org/pdf/2001.02302.pdf">[Paper]</a></p>
+</li>
+<li>
+<p>Classifying All Interacting Pairs in a Single Shot (Jan. 2020) <a href="https://arxiv.org/pdf/2001.04360.pdf">[Paper]</a></p>
+</li>
+<li>
+<p>Novel Human-Object Interaction Detection via Adversarial Domain Generalization (May. 2020) <a href="https://arxiv.org/pdf/2005.11406.pdf">[Paper]</a></p>
+</li>
+<li>
+<p>PMN (Jul. 2020) <a href="https://arxiv.org/pdf/2008.02042.pdf">[Paper]</a> <a href="https://github.com/birlrobotics/PMN">[Code]</a></p>
+</li>
+<li>
+<p>SAG (Dec 2020) <a href="https://arxiv.org/pdf/2012.06060.pdf">[Paper]</a> <a href="https://github.com/fredzzhang/spatio-attentive-graphs">[Code]</a></p>
+</li>
+<li>
+<p>SABRA (Dec 2020) <a href="https://arxiv.org/pdf/2012.12510.pdf">[Paper]</a></p>
+</li>
+</ul>
+<p>More...</p>
+<h4 id="unseen-or-zerolow-shot-or-weakly-supervised-learning-instance-level-detection">Unseen or zero/low-shot or weakly-supervised learning (instance-level detection).</h4>
+<ul>
+<li>
+<p>THID (CVPR 2022), <a href="https://cse.buffalo.edu/~jsyuan/papers/2022/CVPR2022_4126.pdf">[Paper]</a>, <a href="https://github.com/scwangdyd/promting_hoi">[Code]</a></p>
+</li>
+<li>
+<p>EoID (arXiv 2022), <a href="https://arxiv.org/pdf/2204.03541.pdf">[Paper]</a>, <a href="https://github.com/mrwu-mac/EoID">[Code]</a></p>
+</li>
+<li>
+<p>SCL (arXiv 2022), <a href="https://arxiv.org/pdf/2203.14272.pdf">[Paper]</a>, <a href="https://github.com/zhihou7/HOI-CL">[Code]</a></p>
+</li>
+<li>
+<p>GEN-VLKT (CVPR 2022), <a href="https://arxiv.org/pdf/2203.13954.pdf">[Paper]</a>, <a href="https://github.com/YueLiao/gen-vlkt">[Code]</a></p>
+</li>
+<li>
+<p>OC-Immunity (AAAI 2022), <a href="https://arxiv.org/pdf/2202.09492.pdf">[Paper]</a>, <a href="https://github.com/Foruck/OC-Immunity">[Code]</a></p>
+</li>
+<li>
+<p>CHOID (CVPR 2021), <a href="https://openaccess.thecvf.com/content/ICCV2021/papers/Wang_Discovering_Human_Interactions_With_Large-Vocabulary_Objects_via_Query_and_Multi-Scale_ICCV_2021_paper.pdf">[Paper]</a>, <a href="https://github.com/scwangdyd/">[Code]</a></p>
+</li>
+<li>
+<p>Align-Former (BMVC 2021), <a href="https://arxiv.org/pdf/2112.00492.pdf">[Paper]</a></p>
+</li>
+<li>
+<p>Discovering Human Interactions with Large-Vocabulary Objects via Query and Multi-Scale Detection (ICCV2021) <a href="https://cse.buffalo.edu/~jsyuan/papers/2021/ICCV2021_sucheng.pdf">[Paper]</a>, <a href="https://github.com/scwangdyd/large_vocabulary_hoi_detection">[Code]</a></p>
+</li>
+<li>
+<p>DGIG-Net (TOC2021) <a href="https://ieeexplore.ieee.org/abstract/document/9352497">[Paper]</a></p>
+</li>
+<li>
+<p>ATL (CVPR2021)  <a href="https://arxiv.org/pdf/2104.02867.pdf">[Paper]</a>, <a href="https://github.com/zhihou7/HOI-CL">[Code]</a></p>
+</li>
+<li>
+<p>FCL (CVPR2021) <a href="https://arxiv.org/pdf/2103.08214.pdf">[Paper]</a>, <a href="https://github.com/zhihou7/FCL">[Code]</a></p>
+</li>
+<li>
+<p>Detecting Human-Object Interaction with Mixed Supervision (WACV 2021) <a href="https://arxiv.org/pdf/2011.04971v1.pdf">[Paper]</a></p>
+</li>
+<li>
+<p>ConsNet (ACMMM2020) <a href="https://arxiv.org/pdf/2008.06254.pdf">[Paper]</a> <a href="https://github.com/yeliudev/ConsNet">[Code]</a></p>
+</li>
+<li>
+<p>Zero-Shot Human-Object Interaction Recognition via Affordance Graphs (Sep. 2020) <a href="https://arxiv.org/pdf/2009.01039.pdf">[Paper]</a></p>
+</li>
+<li>
+<p>VCL (ECCV2020) <a href="https://arxiv.org/pdf/2007.12407.pdf">[Paper]</a> <a href="https://github.com/zhihou7/VCL">[Code]</a></p>
+</li>
+<li>
+<p>HOID (CVPR2020) <a href="https://github.com/scwangdyd/zero_shot_hoi">[Code]</a> <a href="https://cse.buffalo.edu/~jsyuan/papers/2020/05225.pdf">[Paper]</a></p>
+</li>
+<li>
+<p>Novel Human-Object Interaction Detection via Adversarial Domain Generalization (May. 2020) <a href="https://arxiv.org/pdf/2005.11406.pdf">[Paper]</a></p>
+</li>
+<li>
+<p>Analogy (ICCV2019) <a href="https://github.com/jpeyre/analogy">[Code]</a> <a href="https://www.di.ens.fr/willow/research/analogy/paper.pdf">[Paper]</a></p>
+</li>
+<li>
+<p>Functional (AAAI2020) <a href="https://arxiv.org/pdf/1904.03181.pdf">[Paper]</a></p>
+</li>
+<li>
+<p>Scaling Human-Object Interaction Recognition through Zero-Shot Learning (WACV2018) <a href="http://vision.stanford.edu/pdf/shen2018wacv.pdf">[Paper]</a></p>
+</li>
+</ul>
+<p>More...</p>
+<h3 id="video-hoi-methods">Video HOI methods</h3>
+<ul>
+<li>
+<p>SPDTP (arXiv, Jun 2022), <a href="https://arxiv.org/pdf/2206.03061.pdf">[Paper]</a></p>
+</li>
+<li>
+<p>V-HOI (arXiv, Jun 2022), <a href="https://arxiv.org/pdf/2206.01908.pdf">[Paper]</a></p>
+</li>
+<li>
+<p>Detecting Human-Object Relationships in Videos (ICCV2021) <a href="https://openaccess.thecvf.com/content/ICCV2021/papers/Ji_Detecting_Human-Object_Relationships_in_Videos_ICCV_2021_paper.pdf">[Paper]</a></p>
+</li>
+<li>
+<p>STIGPN (Aug 2021), <a href="https://arxiv.org/pdf/2108.08633.pdf">[Paper]</a>, <a href="https://github.com/GuangmingZhu/STIGPN">[Code]</a></p>
+</li>
+<li>
+<p>VidHOI (May 2021), <a href="https://arxiv.org/pdf/2105.11731.pdf">[Paper]</a></p>
+</li>
+<li>
+<p>LIGHTEN (ACMMM2020) <a href="https://www.cse.iitb.ac.in/~rdabral/docs/acm_lighten.pdf">[Paper]</a> <a href="https://github.com/praneeth11009/LIGHTEN-Learning-Interactions-with-Graphs-and-Hierarchical-TEmporal-Networks-for-HOI">[Code]</a></p>
+</li>
+<li>
+<p>Generating Videos of Zero-Shot Compositions of Actions and Objects (Jul 2020), HOI GAN, <a href="https://arxiv.org/pdf/1912.02401.pdf">[Paper]</a></p>
+</li>
+<li>
+<p>Grounded Human-Object Interaction Hotspots from Video (ICCV2019) <a href="https://github.com/Tushar-N/interaction-hotspots">[Code]</a> <a href="https://arxiv.org/pdf/1812.04558.pdf">[Paper]</a></p>
+</li>
+<li>
+<p>GPNN (ECCV2018) <a href="https://github.com/SiyuanQi/gpnn">[Code]</a> <a href="https://arxiv.org/pdf/1808.07962.pdf">[Paper]</a></p>
+</li>
+</ul>
+<p>More...</p>
+<h2 id="result">Result</h2>
+<h3 id="pastanet-hoi"><a href="https://github.com/DirtyHarryLYL/Transferable-Interactiveness-Network">PaStaNet-HOI</a>:</h3>
+<p>Proposed by TIN (TPAMI version, Transferable Interactiveness Network).<br>
+It is built on HAKE data, includes 110K+ images and 520 HOIs (without the 80 &quot;no_interaction&quot; HOIs of HICO-DET to avoid the incomplete labeling).<br>
+It has a more severe long-tailed data distribution thus is more difficult.</p>
+<h4 id="detector-coco-pre-trained">Detector: COCO pre-trained</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Method</th>
+<th style="text-align:center">mAP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">iCAN</td>
+<td style="text-align:center">11.00</td>
+</tr>
+<tr>
+<td style="text-align:center">iCAN+NIS</td>
+<td style="text-align:center">13.13</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/DirtyHarryLYL/Transferable-Interactiveness-Network">TIN</a></td>
+<td style="text-align:center"><strong>15.38</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="hico-det">HICO-DET:</h3>
+<h4 id="1-detector-coco-pre-trained">1) Detector: COCO pre-trained</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Method</th>
+<th style="text-align:center">Pub</th>
+<th style="text-align:center">Full(def)</th>
+<th style="text-align:center">Rare(def)</th>
+<th style="text-align:center">None-Rare(def)</th>
+<th style="text-align:center">Full(ko)</th>
+<th style="text-align:center">Rare(ko)</th>
+<th style="text-align:center">None-Rare(ko)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><a href="http://vision.stanford.edu/pdf/shen2018wacv.pdf">Shen et al.</a></td>
+<td style="text-align:center">WACV2018</td>
+<td style="text-align:center">6.46</td>
+<td style="text-align:center">4.24</td>
+<td style="text-align:center">7.12</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="http://www-personal.umich.edu/~ywchao/publications/chao_wacv2018.pdf">HO-RCNN</a></td>
+<td style="text-align:center">WACV2018</td>
+<td style="text-align:center">7.81</td>
+<td style="text-align:center">5.37</td>
+<td style="text-align:center">8.54</td>
+<td style="text-align:center">10.41</td>
+<td style="text-align:center">8.94</td>
+<td style="text-align:center">10.85</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/1704.07333.pdf">InteractNet</a></td>
+<td style="text-align:center">CVPR2018</td>
+<td style="text-align:center">9.94</td>
+<td style="text-align:center">7.16</td>
+<td style="text-align:center">10.77</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/1903.06355.pdf">Turbo</a></td>
+<td style="text-align:center">AAAI2019</td>
+<td style="text-align:center">11.40</td>
+<td style="text-align:center">7.30</td>
+<td style="text-align:center">12.60</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/1808.07962.pdf">GPNN</a></td>
+<td style="text-align:center">ECCV2018</td>
+<td style="text-align:center">13.11</td>
+<td style="text-align:center">9.34</td>
+<td style="text-align:center">14.23</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://www-users.cs.umn.edu/~qzhao/publications/pdf/xu2019cvpr.pdf">Xu et. al</a></td>
+<td style="text-align:center">ICCV2019</td>
+<td style="text-align:center">14.70</td>
+<td style="text-align:center">13.26</td>
+<td style="text-align:center">15.13</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/1808.10437.pdf">iCAN</a></td>
+<td style="text-align:center">BMVC2018</td>
+<td style="text-align:center">14.84</td>
+<td style="text-align:center">10.45</td>
+<td style="text-align:center">16.15</td>
+<td style="text-align:center">16.26</td>
+<td style="text-align:center">11.33</td>
+<td style="text-align:center">17.73</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="http://openaccess.thecvf.com/content_ICCV_2019/papers/Wang_Deep_Contextual_Attention_for_Human-Object_Interaction_Detection_ICCV_2019_paper.pdf">Wang et. al.</a></td>
+<td style="text-align:center">ICCV2019</td>
+<td style="text-align:center">16.24</td>
+<td style="text-align:center">11.16</td>
+<td style="text-align:center">17.75</td>
+<td style="text-align:center">17.73</td>
+<td style="text-align:center">12.78</td>
+<td style="text-align:center">19.21</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://www.ijcai.org/Proceedings/2020/0154.pdf">Lin et. al</a></td>
+<td style="text-align:center">IJCAI2020</td>
+<td style="text-align:center">16.63</td>
+<td style="text-align:center">11.30</td>
+<td style="text-align:center">18.22</td>
+<td style="text-align:center">19.22</td>
+<td style="text-align:center">14.56</td>
+<td style="text-align:center">20.61</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/1904.03181.pdf">Functional</a> (suppl)</td>
+<td style="text-align:center">AAAI2020</td>
+<td style="text-align:center">16.96</td>
+<td style="text-align:center">11.73</td>
+<td style="text-align:center">18.52</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/1811.08264.pdf">Interactiveness</a></td>
+<td style="text-align:center">CVPR2019</td>
+<td style="text-align:center">17.03</td>
+<td style="text-align:center">13.42</td>
+<td style="text-align:center">18.11</td>
+<td style="text-align:center">19.17</td>
+<td style="text-align:center">15.51</td>
+<td style="text-align:center">20.26</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="http://tanmaygupta.info/assets/img/no_frills/paper.pdf">No-Frills</a></td>
+<td style="text-align:center">ICCV2019</td>
+<td style="text-align:center">17.18</td>
+<td style="text-align:center">12.17</td>
+<td style="text-align:center">18.68</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="http://openaccess.thecvf.com/content_ICCV_2019/papers/Zhou_Relation_Parsing_Neural_Network_for_Human-Object_Interaction_Detection_ICCV_2019_paper.pdf">RPNN</a></td>
+<td style="text-align:center">ICCV2019</td>
+<td style="text-align:center">17.35</td>
+<td style="text-align:center">12.78</td>
+<td style="text-align:center">18.71</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/1909.08453.pdf">PMFNet</a></td>
+<td style="text-align:center">ICCV2019</td>
+<td style="text-align:center">17.46</td>
+<td style="text-align:center">15.65</td>
+<td style="text-align:center">18.00</td>
+<td style="text-align:center">20.34</td>
+<td style="text-align:center">17.47</td>
+<td style="text-align:center">21.20</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://ieeexplore.ieee.org/ielx7/9099125/9102711/09102755.pdf">SIGN</a></td>
+<td style="text-align:center">ICME2020</td>
+<td style="text-align:center">17.51</td>
+<td style="text-align:center">15.31</td>
+<td style="text-align:center">18.53</td>
+<td style="text-align:center">20.49</td>
+<td style="text-align:center">17.53</td>
+<td style="text-align:center">21.51</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/DirtyHarryLYL/Transferable-Interactiveness-Network">Interactiveness-optimized</a></td>
+<td style="text-align:center">CVPR2019</td>
+<td style="text-align:center">17.54</td>
+<td style="text-align:center">13.80</td>
+<td style="text-align:center">18.65</td>
+<td style="text-align:center">19.75</td>
+<td style="text-align:center">15.70</td>
+<td style="text-align:center">20.96</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/2105.03089.pdf">Liu et.al.</a></td>
+<td style="text-align:center">arXiv</td>
+<td style="text-align:center">17.55</td>
+<td style="text-align:center">20.61</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="http://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123620239.pdf">Wang et al.</a></td>
+<td style="text-align:center">ECCV2020</td>
+<td style="text-align:center">17.57</td>
+<td style="text-align:center">16.85</td>
+<td style="text-align:center">17.78</td>
+<td style="text-align:center">21.00</td>
+<td style="text-align:center">20.74</td>
+<td style="text-align:center">21.08</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/2007.06925.pdf">In-GraphNet</a></td>
+<td style="text-align:center">IJCAI-PRICAI 2020</td>
+<td style="text-align:center">17.72</td>
+<td style="text-align:center">12.93</td>
+<td style="text-align:center">19.31</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/scwangdyd/zero_shot_hoi">HOID</a></td>
+<td style="text-align:center">CVPR2020</td>
+<td style="text-align:center">17.85</td>
+<td style="text-align:center">12.85</td>
+<td style="text-align:center">19.34</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://dl.acm.org/doi/pdf/10.1145/3372278.3390671">MLCNet</a></td>
+<td style="text-align:center">ICMR2020</td>
+<td style="text-align:center">17.95</td>
+<td style="text-align:center">16.62</td>
+<td style="text-align:center">18.35</td>
+<td style="text-align:center">22.28</td>
+<td style="text-align:center">20.73</td>
+<td style="text-align:center">22.74</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/fredzzhang/spatio-attentive-graphs">SAG</a></td>
+<td style="text-align:center">arXiv</td>
+<td style="text-align:center">18.26</td>
+<td style="text-align:center">13.40</td>
+<td style="text-align:center">19.71</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/2009.01039.pdf">Sarullo et al.</a></td>
+<td style="text-align:center">arXiv</td>
+<td style="text-align:center">18.74</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/vt-vl-lab/DRG">DRG</a></td>
+<td style="text-align:center">ECCV2020</td>
+<td style="text-align:center">19.26</td>
+<td style="text-align:center">17.74</td>
+<td style="text-align:center">19.71</td>
+<td style="text-align:center">23.40</td>
+<td style="text-align:center">21.75</td>
+<td style="text-align:center">23.89</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://www.di.ens.fr/willow/research/analogy/paper.pdf">Analogy</a></td>
+<td style="text-align:center">ICCV2019</td>
+<td style="text-align:center">19.40</td>
+<td style="text-align:center">14.60</td>
+<td style="text-align:center">20.90</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/zhihou7/VCL">VCL</a></td>
+<td style="text-align:center">ECCV2020</td>
+<td style="text-align:center">19.43</td>
+<td style="text-align:center">16.55</td>
+<td style="text-align:center">20.29</td>
+<td style="text-align:center">22.00</td>
+<td style="text-align:center">19.09</td>
+<td style="text-align:center">22.87</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/2001.02302.pdf">VS-GATs</a></td>
+<td style="text-align:center">arXiv</td>
+<td style="text-align:center">19.66</td>
+<td style="text-align:center">15.79</td>
+<td style="text-align:center">20.81</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/ASMIftekhar/VSGNet">VSGNet</a></td>
+<td style="text-align:center">CVPR2020</td>
+<td style="text-align:center">19.80</td>
+<td style="text-align:center">16.05</td>
+<td style="text-align:center">20.91</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://link.springer.com/content/pdf/10.1007/s41095-020-0188-2.pdf">PFNet</a></td>
+<td style="text-align:center">CVM</td>
+<td style="text-align:center">20.05</td>
+<td style="text-align:center">16.66</td>
+<td style="text-align:center">21.07</td>
+<td style="text-align:center">24.01</td>
+<td style="text-align:center">21.09</td>
+<td style="text-align:center">24.89</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/zhihou7/HOI-CL">ATL(w/ COCO)</a></td>
+<td style="text-align:center">CVPR2021</td>
+<td style="text-align:center">20.08</td>
+<td style="text-align:center">15.57</td>
+<td style="text-align:center">21.43</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="http://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123590239.pdf">FCMNet</a></td>
+<td style="text-align:center">ECCV2020</td>
+<td style="text-align:center">20.41</td>
+<td style="text-align:center">17.34</td>
+<td style="text-align:center">21.56</td>
+<td style="text-align:center">22.04</td>
+<td style="text-align:center">18.97</td>
+<td style="text-align:center">23.12</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/Dong-JinKim/ActionCooccurrencePriors/">ACP</a></td>
+<td style="text-align:center">ECCV2020</td>
+<td style="text-align:center">20.59</td>
+<td style="text-align:center">15.92</td>
+<td style="text-align:center">21.98</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/MuchHair/PD-Net">PD-Net</a></td>
+<td style="text-align:center">ECCV2020</td>
+<td style="text-align:center">20.81</td>
+<td style="text-align:center">15.90</td>
+<td style="text-align:center">22.28</td>
+<td style="text-align:center">24.78</td>
+<td style="text-align:center">18.88</td>
+<td style="text-align:center">26.54</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/2108.08584.pdf">SG2HOI</a></td>
+<td style="text-align:center">ICCV2021</td>
+<td style="text-align:center">20.93</td>
+<td style="text-align:center">18.24</td>
+<td style="text-align:center">21.78</td>
+<td style="text-align:center">24.83</td>
+<td style="text-align:center">20.52</td>
+<td style="text-align:center">25.32</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/DirtyHarryLYL/Transferable-Interactiveness-Network">TIN-PAMI</a></td>
+<td style="text-align:center">TAPMI2021</td>
+<td style="text-align:center">20.93</td>
+<td style="text-align:center">18.95</td>
+<td style="text-align:center">21.32</td>
+<td style="text-align:center">23.02</td>
+<td style="text-align:center">20.96</td>
+<td style="text-align:center">23.42</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/zhihou7/HOI-CL">ATL</a></td>
+<td style="text-align:center">CVPR2021</td>
+<td style="text-align:center">21.07</td>
+<td style="text-align:center">16.79</td>
+<td style="text-align:center">22.35</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/birlrobotics/PMN">PMN</a></td>
+<td style="text-align:center">arXiv</td>
+<td style="text-align:center">21.21</td>
+<td style="text-align:center">17.60</td>
+<td style="text-align:center">22.29</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://ieeexplore.ieee.org/document/9489275">IPGN</a></td>
+<td style="text-align:center">TIP2021</td>
+<td style="text-align:center">21.26</td>
+<td style="text-align:center">18.47</td>
+<td style="text-align:center">22.07</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/DirtyHarryLYL/DJ-RN">DJ-RN</a></td>
+<td style="text-align:center">CVPR2020</td>
+<td style="text-align:center">21.34</td>
+<td style="text-align:center">18.53</td>
+<td style="text-align:center">22.18</td>
+<td style="text-align:center">23.69</td>
+<td style="text-align:center">20.64</td>
+<td style="text-align:center">24.60</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9360596">OSGNet</a></td>
+<td style="text-align:center">IEEE Access</td>
+<td style="text-align:center">21.40</td>
+<td style="text-align:center">18.12</td>
+<td style="text-align:center">22.38</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/2207.07979.pdf">K-BAN</a></td>
+<td style="text-align:center">arXiv2022</td>
+<td style="text-align:center">21.48</td>
+<td style="text-align:center">16.85</td>
+<td style="text-align:center">22.86</td>
+<td style="text-align:center">24.29</td>
+<td style="text-align:center">19.09</td>
+<td style="text-align:center">25.85</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/2207.02400.pdf">SCG+ODM</a></td>
+<td style="text-align:center">arXiv</td>
+<td style="text-align:center">21.50</td>
+<td style="text-align:center">17.59</td>
+<td style="text-align:center">22.67</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/2010.01005.pdf">DIRV</a></td>
+<td style="text-align:center">AAAI2021</td>
+<td style="text-align:center">21.78</td>
+<td style="text-align:center">16.38</td>
+<td style="text-align:center">23.39</td>
+<td style="text-align:center">25.52</td>
+<td style="text-align:center">20.84</td>
+<td style="text-align:center">26.92</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/fredzzhang/spatially-conditioned-graphs">SCG</a></td>
+<td style="text-align:center">ICCV2021</td>
+<td style="text-align:center">21.85</td>
+<td style="text-align:center">18.11</td>
+<td style="text-align:center">22.97</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=9552553">HRNet</a></td>
+<td style="text-align:center">TIP2021</td>
+<td style="text-align:center">21.93</td>
+<td style="text-align:center">16.30</td>
+<td style="text-align:center">23.62</td>
+<td style="text-align:center">25.22</td>
+<td style="text-align:center">18.75</td>
+<td style="text-align:center">27.15</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/yeliudev/ConsNet">ConsNet</a></td>
+<td style="text-align:center">ACMMM2020</td>
+<td style="text-align:center">22.15</td>
+<td style="text-align:center">17.55</td>
+<td style="text-align:center">23.52</td>
+<td style="text-align:center">26.57</td>
+<td style="text-align:center">20.8</td>
+<td style="text-align:center">28.3</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/DirtyHarryLYL/HAKE-Action-Torch/tree/IDN-(Integrating-Decomposing-Network)">IDN</a></td>
+<td style="text-align:center">NeurIPS2020</td>
+<td style="text-align:center">23.36</td>
+<td style="text-align:center">22.47</td>
+<td style="text-align:center">23.63</td>
+<td style="text-align:center">26.43</td>
+<td style="text-align:center">25.01</td>
+<td style="text-align:center">26.85</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/cjw2021/QAHOI">QAHOI-Res50</a></td>
+<td style="text-align:center">arXiv2021</td>
+<td style="text-align:center">24.35</td>
+<td style="text-align:center">16.18</td>
+<td style="text-align:center">26.80</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/SherlockHolmes221/DOQ">DOQ</a></td>
+<td style="text-align:center">CVPR2022</td>
+<td style="text-align:center">25.97</td>
+<td style="text-align:center">26.09</td>
+<td style="text-align:center">25.93</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/zyong812/STIP">STIP</a></td>
+<td style="text-align:center">CVPR2022</td>
+<td style="text-align:center"><strong>28.81</strong></td>
+<td style="text-align:center"><strong>27.55</strong></td>
+<td style="text-align:center"><strong>29.18</strong></td>
+<td style="text-align:center"><strong>32.28</strong></td>
+<td style="text-align:center"><strong>31.07</strong></td>
+<td style="text-align:center"><strong>32.64</strong></td>
+</tr>
+</tbody>
+</table>
+<h4 id="2-detector-pre-trained-on-coco-fine-tuned-on-hico-det-train-set-with-gt-human-object-pair-boxes-or-one-stage-detector-point-based-transformer-based">2) Detector: pre-trained on COCO, fine-tuned on HICO-DET train set (with GT human-object pair boxes) or one-stage detector (point-based, transformer-based)</h4>
+<p>Finetuned detector would learn to <strong>only detect the interactive humans and objects</strong> (with interactiveness), thus suppress many wrong pairings (non-interactive human-object pairs) and boost the performance.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Method</th>
+<th style="text-align:center">Pub</th>
+<th style="text-align:center">Full(def)</th>
+<th style="text-align:center">Rare(def)</th>
+<th style="text-align:center">None-Rare(def)</th>
+<th style="text-align:center">Full(ko)</th>
+<th style="text-align:center">Rare(ko)</th>
+<th style="text-align:center">None-Rare(ko)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><a href="http://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123600494.pdf">UniDet</a></td>
+<td style="text-align:center">ECCV2020</td>
+<td style="text-align:center">17.58</td>
+<td style="text-align:center">11.72</td>
+<td style="text-align:center">19.33</td>
+<td style="text-align:center">19.76</td>
+<td style="text-align:center">14.68</td>
+<td style="text-align:center">21.27</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/2003.14023.pdf">IP-Net</a></td>
+<td style="text-align:center">CVPR2020</td>
+<td style="text-align:center">19.56</td>
+<td style="text-align:center">12.79</td>
+<td style="text-align:center">21.58</td>
+<td style="text-align:center">22.05</td>
+<td style="text-align:center">15.77</td>
+<td style="text-align:center">23.92</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/2104.15015.pdf">RR-Net</a></td>
+<td style="text-align:center">arXiv</td>
+<td style="text-align:center">20.72</td>
+<td style="text-align:center">13.21</td>
+<td style="text-align:center">22.97</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/1912.12898v1.pdf">PPDM</a> (paper)</td>
+<td style="text-align:center">CVPR2020</td>
+<td style="text-align:center">21.10</td>
+<td style="text-align:center">14.46</td>
+<td style="text-align:center">23.09</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/YueLiao/PPDM">PPDM</a> (github-hourglass104)</td>
+<td style="text-align:center">CVPR2020</td>
+<td style="text-align:center">21.73/21.94</td>
+<td style="text-align:center">13.78/13.97</td>
+<td style="text-align:center">24.10/24.32</td>
+<td style="text-align:center">24.58/24.81</td>
+<td style="text-align:center">16.65/17.09</td>
+<td style="text-align:center">26.84/27.12</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/1904.03181.pdf">Functional</a></td>
+<td style="text-align:center">AAAI2020</td>
+<td style="text-align:center">21.96</td>
+<td style="text-align:center">16.43</td>
+<td style="text-align:center">23.62</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/2012.12510.pdf">SABRA-Res50</a></td>
+<td style="text-align:center">arXiv</td>
+<td style="text-align:center">23.48</td>
+<td style="text-align:center">16.39</td>
+<td style="text-align:center">25.59</td>
+<td style="text-align:center">28.79</td>
+<td style="text-align:center">22.75</td>
+<td style="text-align:center">30.54</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/zhihou7/VCL">VCL</a></td>
+<td style="text-align:center">ECCV2020</td>
+<td style="text-align:center">23.63</td>
+<td style="text-align:center">17.21</td>
+<td style="text-align:center">25.55</td>
+<td style="text-align:center">25.98</td>
+<td style="text-align:center">19.12</td>
+<td style="text-align:center">28.03</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/zhihou7/HOI-CL">ATL</a></td>
+<td style="text-align:center">CVPR2021</td>
+<td style="text-align:center">23.67</td>
+<td style="text-align:center">17.64</td>
+<td style="text-align:center">25.47</td>
+<td style="text-align:center">26.01</td>
+<td style="text-align:center">19.60</td>
+<td style="text-align:center">27.93</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/2105.02170.pdf">PST</a></td>
+<td style="text-align:center">ICCV2021</td>
+<td style="text-align:center">23.93</td>
+<td style="text-align:center">14.98</td>
+<td style="text-align:center">26.60</td>
+<td style="text-align:center">26.42</td>
+<td style="text-align:center">17.61</td>
+<td style="text-align:center">29.05</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/2012.12510.pdf">SABRA-Res50FPN</a></td>
+<td style="text-align:center">arXiv</td>
+<td style="text-align:center">24.12</td>
+<td style="text-align:center">15.91</td>
+<td style="text-align:center">26.57</td>
+<td style="text-align:center">29.65</td>
+<td style="text-align:center">22.92</td>
+<td style="text-align:center">31.65</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/zhihou7/HOI-CL">ATL(w/ COCO)</a></td>
+<td style="text-align:center">CVPR2021</td>
+<td style="text-align:center">24.50</td>
+<td style="text-align:center">18.53</td>
+<td style="text-align:center">26.28</td>
+<td style="text-align:center">27.23</td>
+<td style="text-align:center">21.27</td>
+<td style="text-align:center">29.00</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/DirtyHarryLYL/HAKE-Action-Torch/tree/IDN-(Integrating-Decomposing-Network)">IDN</a></td>
+<td style="text-align:center">NeurIPS2020</td>
+<td style="text-align:center">24.58</td>
+<td style="text-align:center">20.33</td>
+<td style="text-align:center">25.86</td>
+<td style="text-align:center">27.89</td>
+<td style="text-align:center">23.64</td>
+<td style="text-align:center">29.16</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/zhihou7/FCL">FCL</a></td>
+<td style="text-align:center">CVPR2021</td>
+<td style="text-align:center">24.68</td>
+<td style="text-align:center">20.03</td>
+<td style="text-align:center">26.07</td>
+<td style="text-align:center">26.80</td>
+<td style="text-align:center">21.61</td>
+<td style="text-align:center">28.35</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/kakaobrain/HOTR">HOTR</a></td>
+<td style="text-align:center">CVPR2021</td>
+<td style="text-align:center">25.10</td>
+<td style="text-align:center">17.34</td>
+<td style="text-align:center">27.42</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/zhihou7/FCL">FCL+VCL</a></td>
+<td style="text-align:center">CVPR2021</td>
+<td style="text-align:center">25.27</td>
+<td style="text-align:center">20.57</td>
+<td style="text-align:center">26.67</td>
+<td style="text-align:center">27.71</td>
+<td style="text-align:center">22.34</td>
+<td style="text-align:center">28.93</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/Foruck/OC-Immunity">OC-Immunity</a></td>
+<td style="text-align:center">AAAI2022</td>
+<td style="text-align:center">25.44</td>
+<td style="text-align:center">23.03</td>
+<td style="text-align:center">26.16</td>
+<td style="text-align:center">27.24</td>
+<td style="text-align:center">24.32</td>
+<td style="text-align:center">28.11</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/yeliudev/ConsNet">ConsNet-F</a></td>
+<td style="text-align:center">ACMMM2020</td>
+<td style="text-align:center">25.94</td>
+<td style="text-align:center">19.35</td>
+<td style="text-align:center">27.91</td>
+<td style="text-align:center">30.34</td>
+<td style="text-align:center">23.4</td>
+<td style="text-align:center">32.41</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/2012.12510.pdf">SABRA-Res152</a></td>
+<td style="text-align:center">arXiv</td>
+<td style="text-align:center">26.09</td>
+<td style="text-align:center">16.29</td>
+<td style="text-align:center">29.02</td>
+<td style="text-align:center">31.08</td>
+<td style="text-align:center">23.44</td>
+<td style="text-align:center">33.37</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/cjw2021/QAHOI">QAHOI-Res50</a></td>
+<td style="text-align:center">arXiv2021</td>
+<td style="text-align:center">26.18</td>
+<td style="text-align:center">18.06</td>
+<td style="text-align:center">28.61</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/bbepoch/HoiTransformer">Zou et al.</a></td>
+<td style="text-align:center">CVPR2021</td>
+<td style="text-align:center">26.61</td>
+<td style="text-align:center">19.15</td>
+<td style="text-align:center">28.84</td>
+<td style="text-align:center">29.13</td>
+<td style="text-align:center">20.98</td>
+<td style="text-align:center">31.57</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/2202.11998.pdf">RGBM</a></td>
+<td style="text-align:center">arXiv2022</td>
+<td style="text-align:center">27.39</td>
+<td style="text-align:center">21.34</td>
+<td style="text-align:center">29.20</td>
+<td style="text-align:center">30.87</td>
+<td style="text-align:center">24.20</td>
+<td style="text-align:center">32.87</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/UCSB-VRL/GTNet">GTNet</a></td>
+<td style="text-align:center">arXiv</td>
+<td style="text-align:center">28.03</td>
+<td style="text-align:center">22.73</td>
+<td style="text-align:center">29.61</td>
+<td style="text-align:center">29.98</td>
+<td style="text-align:center">24.13</td>
+<td style="text-align:center">31.73</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/2207.07979.pdf">K-BAN</a></td>
+<td style="text-align:center">arXiv2022</td>
+<td style="text-align:center">28.83</td>
+<td style="text-align:center">20.29</td>
+<td style="text-align:center">31.31</td>
+<td style="text-align:center">31.05</td>
+<td style="text-align:center">21.41</td>
+<td style="text-align:center">33.93</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/yoyomimi/AS-Net">AS-Net</a></td>
+<td style="text-align:center">CVPR2021</td>
+<td style="text-align:center">28.87</td>
+<td style="text-align:center">24.25</td>
+<td style="text-align:center">30.25</td>
+<td style="text-align:center">31.74</td>
+<td style="text-align:center">27.07</td>
+<td style="text-align:center">33.14</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/hitachi-rd-cv/qpic">QPIC-Res50</a></td>
+<td style="text-align:center">CVPR2021</td>
+<td style="text-align:center">29.07</td>
+<td style="text-align:center">21.85</td>
+<td style="text-align:center">31.23</td>
+<td style="text-align:center">31.68</td>
+<td style="text-align:center">24.14</td>
+<td style="text-align:center">33.93</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/SherlockHolmes221/GGNet">GGNet</a></td>
+<td style="text-align:center">CVPR2021</td>
+<td style="text-align:center">29.17</td>
+<td style="text-align:center">22.13</td>
+<td style="text-align:center">30.84</td>
+<td style="text-align:center">33.50</td>
+<td style="text-align:center">26.67</td>
+<td style="text-align:center">34.89</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/2204.04836.pdf">QPIC-CPC</a></td>
+<td style="text-align:center">CVPR2022</td>
+<td style="text-align:center">29.63</td>
+<td style="text-align:center">23.14</td>
+<td style="text-align:center">31.57</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/hitachi-rd-cv/qpic">QPIC-Res101</a></td>
+<td style="text-align:center">CVPR2021</td>
+<td style="text-align:center">29.90</td>
+<td style="text-align:center">23.92</td>
+<td style="text-align:center">31.69</td>
+<td style="text-align:center">32.38</td>
+<td style="text-align:center">26.06</td>
+<td style="text-align:center">34.27</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/fredzzhang/spatially-conditioned-graphs">SCG</a></td>
+<td style="text-align:center">ICCV2021</td>
+<td style="text-align:center">29.26</td>
+<td style="text-align:center">24.61</td>
+<td style="text-align:center">30.65</td>
+<td style="text-align:center">32.87</td>
+<td style="text-align:center">27.89</td>
+<td style="text-align:center">34.35</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/2112.07383.pdf">PhraseHOI</a></td>
+<td style="text-align:center">AAAI2022</td>
+<td style="text-align:center">30.03</td>
+<td style="text-align:center">23.48</td>
+<td style="text-align:center">31.99</td>
+<td style="text-align:center">33.74</td>
+<td style="text-align:center">27.35</td>
+<td style="text-align:center">35.64</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/2203.14709.pdf">MSTR</a></td>
+<td style="text-align:center">CVPR2022</td>
+<td style="text-align:center">31.17</td>
+<td style="text-align:center">25.31</td>
+<td style="text-align:center">32.92</td>
+<td style="text-align:center">34.02</td>
+<td style="text-align:center">28.83</td>
+<td style="text-align:center">35.57</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/2204.00746.pdf">SSRT</a></td>
+<td style="text-align:center">CVPR2022</td>
+<td style="text-align:center">31.34</td>
+<td style="text-align:center">24.31</td>
+<td style="text-align:center">33.32</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/JacobYuan7/OCN-HOI-Benchmark">OCN</a></td>
+<td style="text-align:center">AAAI2022</td>
+<td style="text-align:center">31.43</td>
+<td style="text-align:center">25.80</td>
+<td style="text-align:center">33.11</td>
+<td style="text-align:center">65.3</td>
+<td style="text-align:center">67.1</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/2207.02400.pdf">SCG+ODM</a></td>
+<td style="text-align:center">arXiv</td>
+<td style="text-align:center">31.65</td>
+<td style="text-align:center">24.95</td>
+<td style="text-align:center">33.65</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/2204.09290.pdf">DT</a></td>
+<td style="text-align:center">CVPR2022</td>
+<td style="text-align:center">31.75</td>
+<td style="text-align:center">27.45</td>
+<td style="text-align:center">33.03</td>
+<td style="text-align:center">34.50</td>
+<td style="text-align:center">30.13</td>
+<td style="text-align:center">35.81</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/2204.04911.pdf">CATN (w/ Bert)</a></td>
+<td style="text-align:center">arXiv2022</td>
+<td style="text-align:center">31.86</td>
+<td style="text-align:center">25.15</td>
+<td style="text-align:center">33.84</td>
+<td style="text-align:center">34.44</td>
+<td style="text-align:center">27.69</td>
+<td style="text-align:center">36.45</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/YueLiao/CDN">CDN</a></td>
+<td style="text-align:center">NeurIPS2021</td>
+<td style="text-align:center">32.07</td>
+<td style="text-align:center">27.19</td>
+<td style="text-align:center">33.53</td>
+<td style="text-align:center">34.79</td>
+<td style="text-align:center">29.48</td>
+<td style="text-align:center">36.38</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/zyong812/STIP">STIP</a></td>
+<td style="text-align:center">CVPR2022</td>
+<td style="text-align:center">32.22</td>
+<td style="text-align:center">28.15</td>
+<td style="text-align:center">33.43</td>
+<td style="text-align:center">35.29</td>
+<td style="text-align:center">31.43</td>
+<td style="text-align:center">36.45</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/2112.06392.pdf">DEFR</a></td>
+<td style="text-align:center">arXiv2021</td>
+<td style="text-align:center">32.35</td>
+<td style="text-align:center">33.45</td>
+<td style="text-align:center">32.02</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/2207.05293.pdf">CDN-s+HQM</a></td>
+<td style="text-align:center">ECCV2022</td>
+<td style="text-align:center">32.47</td>
+<td style="text-align:center">28.15</td>
+<td style="text-align:center">33.76</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/fredzzhang/upt">UPT</a></td>
+<td style="text-align:center">arXiv2021</td>
+<td style="text-align:center">32.62</td>
+<td style="text-align:center">28.62</td>
+<td style="text-align:center">33.81</td>
+<td style="text-align:center">36.08</td>
+<td style="text-align:center">31.41</td>
+<td style="text-align:center">37.47</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/2203.10537.pdf">Iwin</a></td>
+<td style="text-align:center">arXiv2022</td>
+<td style="text-align:center">32.79</td>
+<td style="text-align:center">27.84</td>
+<td style="text-align:center">35.40</td>
+<td style="text-align:center">35.84</td>
+<td style="text-align:center">28.74</td>
+<td style="text-align:center">36.09</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/2207.01869.pdf">SDT</a></td>
+<td style="text-align:center">arXiv2022</td>
+<td style="text-align:center">32.97</td>
+<td style="text-align:center">28.49</td>
+<td style="text-align:center">34.31</td>
+<td style="text-align:center">36.32</td>
+<td style="text-align:center">31.90</td>
+<td style="text-align:center">37.64</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/SherlockHolmes221/DOQ">DOQ</a></td>
+<td style="text-align:center">CVPR2022</td>
+<td style="text-align:center">33.28</td>
+<td style="text-align:center">29.19</td>
+<td style="text-align:center">34.50</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/Foruck/Interactiveness-Field">IF</a></td>
+<td style="text-align:center">CVPR2022</td>
+<td style="text-align:center">33.51</td>
+<td style="text-align:center">30.30</td>
+<td style="text-align:center">34.46</td>
+<td style="text-align:center">36.28</td>
+<td style="text-align:center">33.16</td>
+<td style="text-align:center">37.21</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/YueLiao/gen-vlkt">GEN-VLKT (w/ CLIP)</a></td>
+<td style="text-align:center">CVPR2022</td>
+<td style="text-align:center">34.95</td>
+<td style="text-align:center">31.18</td>
+<td style="text-align:center">36.08</td>
+<td style="text-align:center"><strong>38.22</strong></td>
+<td style="text-align:center">34.36</td>
+<td style="text-align:center"><strong>39.37</strong></td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/enlighten0707/Body-Part-Map-for-Interactiveness">ParMap</a></td>
+<td style="text-align:center">ECCV2022</td>
+<td style="text-align:center">35.15</td>
+<td style="text-align:center"><strong>33.71</strong></td>
+<td style="text-align:center">35.58</td>
+<td style="text-align:center">37.56</td>
+<td style="text-align:center"><strong>35.87</strong></td>
+<td style="text-align:center">38.06</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/cjw2021/QAHOI">QAHOI-Swin-Large-ImageNet-22K</a></td>
+<td style="text-align:center">arXiv2021</td>
+<td style="text-align:center"><strong>35.78</strong></td>
+<td style="text-align:center">29.80</td>
+<td style="text-align:center"><strong>37.56</strong></td>
+<td style="text-align:center">37.59</td>
+<td style="text-align:center">31.66</td>
+<td style="text-align:center">39.36</td>
+</tr>
+</tbody>
+</table>
+<h4 id="3-ground-truth-human-object-pair-boxes-only-evaluating-hoi-recognition">3) Ground Truth human-object pair boxes (only evaluating HOI recognition)</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Method</th>
+<th style="text-align:center">Pub</th>
+<th style="text-align:center">Full(def)</th>
+<th style="text-align:center">Rare(def)</th>
+<th style="text-align:center">None-Rare(def)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/1808.10437.pdf">iCAN</a></td>
+<td style="text-align:center">BMVC2018</td>
+<td style="text-align:center">33.38</td>
+<td style="text-align:center">21.43</td>
+<td style="text-align:center">36.95</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/DirtyHarryLYL/Transferable-Interactiveness-Network">Interactiveness</a></td>
+<td style="text-align:center">CVPR2019</td>
+<td style="text-align:center">34.26</td>
+<td style="text-align:center">22.90</td>
+<td style="text-align:center">37.65</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://www.di.ens.fr/willow/research/analogy/paper.pdf">Analogy</a></td>
+<td style="text-align:center">ICCV2019</td>
+<td style="text-align:center">34.35</td>
+<td style="text-align:center">27.57</td>
+<td style="text-align:center">36.38</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/zhihou7/HOI-CL">ATL</a></td>
+<td style="text-align:center">CVPR2021</td>
+<td style="text-align:center">43.32</td>
+<td style="text-align:center">33.84</td>
+<td style="text-align:center">46.15</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/DirtyHarryLYL/HAKE-Action-Torch/tree/IDN-(Integrating-Decomposing-Network)">IDN</a></td>
+<td style="text-align:center">NeurIPS2020</td>
+<td style="text-align:center">43.98</td>
+<td style="text-align:center">40.27</td>
+<td style="text-align:center">45.09</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/zhihou7/HOI-CL">ATL(w/ COCO)</a></td>
+<td style="text-align:center">CVPR2021</td>
+<td style="text-align:center">44.27</td>
+<td style="text-align:center">35.52</td>
+<td style="text-align:center">46.89</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/zhihou7/FCL">FCL</a></td>
+<td style="text-align:center">CVPR2021</td>
+<td style="text-align:center">45.25</td>
+<td style="text-align:center">36.27</td>
+<td style="text-align:center">47.94</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/UCSB-VRL/GTNet">GTNet</a></td>
+<td style="text-align:center">arXiv</td>
+<td style="text-align:center">46.45</td>
+<td style="text-align:center">35.10</td>
+<td style="text-align:center">49.84</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/fredzzhang/spatially-conditioned-graphs">SCG</a></td>
+<td style="text-align:center">ICCV2021</td>
+<td style="text-align:center">51.53</td>
+<td style="text-align:center"><strong>41.01</strong></td>
+<td style="text-align:center">54.67</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/2207.07979.pdf">K-BAN</a></td>
+<td style="text-align:center">arXiv2022</td>
+<td style="text-align:center">52.99</td>
+<td style="text-align:center">34.91</td>
+<td style="text-align:center"><strong>58.40</strong></td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/yeliudev/ConsNet">ConsNet</a></td>
+<td style="text-align:center">ACMMM2020</td>
+<td style="text-align:center"><strong>53.04</strong></td>
+<td style="text-align:center">38.79</td>
+<td style="text-align:center">57.3</td>
+</tr>
+</tbody>
+</table>
+<h4 id="4-interactiveness-detection-interactive-or-not-pair-box-detection">4) <a href="https://github.com/DirtyHarryLYL/Transferable-Interactiveness-Network/tree/TIN-PAMI">Interactiveness</a> detection (interactive or not + pair box detection):</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Method</th>
+<th style="text-align:center">Pub</th>
+<th style="text-align:center">HICO-DET</th>
+<th style="text-align:center">V-COCO</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><a href="https://github.com/DirtyHarryLYL/Transferable-Interactiveness-Network/tree/TIN-PAMI">TIN++</a></td>
+<td style="text-align:center">TPAMI2022</td>
+<td style="text-align:center">14.35</td>
+<td style="text-align:center">29.36</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/YueLiao/PPDM">PPDM</a></td>
+<td style="text-align:center">CVPR2020</td>
+<td style="text-align:center">27.34</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/hitachi-rd-cv/qpic">QPIC</a></td>
+<td style="text-align:center">CVPR2021</td>
+<td style="text-align:center">32.96</td>
+<td style="text-align:center">38.33</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/YueLiao/CDN">CDN</a></td>
+<td style="text-align:center">NeurIPS2021</td>
+<td style="text-align:center">33.55</td>
+<td style="text-align:center">40.13</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/enlighten0707/Body-Part-Map-for-Interactiveness">ParMap</a></td>
+<td style="text-align:center">ECCV2022</td>
+<td style="text-align:center"><strong>38.74</strong></td>
+<td style="text-align:center"><strong>43.61</strong></td>
+</tr>
+</tbody>
+</table>
+<h4 id="5-enhanced-with-hake">5) Enhanced with HAKE:</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Method</th>
+<th style="text-align:center">Pub</th>
+<th style="text-align:center">Full(def)</th>
+<th style="text-align:center">Rare(def)</th>
+<th style="text-align:center">None-Rare(def)</th>
+<th style="text-align:center">Full(ko)</th>
+<th style="text-align:center">Rare(ko)</th>
+<th style="text-align:center">None-Rare(ko)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/1808.10437.pdf">iCAN</a></td>
+<td style="text-align:center">BMVC2018</td>
+<td style="text-align:center">14.84</td>
+<td style="text-align:center">10.45</td>
+<td style="text-align:center">16.15</td>
+<td style="text-align:center">16.26</td>
+<td style="text-align:center">11.33</td>
+<td style="text-align:center">17.73</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/DirtyHarryLYL/HAKE-Action/tree/Instance-level-HAKE-Action">iCAN + HAKE-HICO-DET</a></td>
+<td style="text-align:center">CVPR2020</td>
+<td style="text-align:center">19.61 (<strong>+4.77</strong>)</td>
+<td style="text-align:center">17.29</td>
+<td style="text-align:center">20.30</td>
+<td style="text-align:center">22.10</td>
+<td style="text-align:center">20.46</td>
+<td style="text-align:center">22.59</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/1811.08264.pdf">Interactiveness</a></td>
+<td style="text-align:center">CVPR2019</td>
+<td style="text-align:center">17.03</td>
+<td style="text-align:center">13.42</td>
+<td style="text-align:center">18.11</td>
+<td style="text-align:center">19.17</td>
+<td style="text-align:center">15.51</td>
+<td style="text-align:center">20.26</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/DirtyHarryLYL/HAKE-Action/tree/Instance-level-HAKE-Action">Interactiveness + HAKE-HICO-DET</a></td>
+<td style="text-align:center">CVPR2020</td>
+<td style="text-align:center">22.12 (<strong>+5.09</strong>)</td>
+<td style="text-align:center">20.19</td>
+<td style="text-align:center">22.69</td>
+<td style="text-align:center">24.06</td>
+<td style="text-align:center">22.19</td>
+<td style="text-align:center">24.62</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/DirtyHarryLYL/HAKE-Action/tree/Instance-level-HAKE-Action">Interactiveness + HAKE-Large</a></td>
+<td style="text-align:center">CVPR2020</td>
+<td style="text-align:center">22.66 (<strong>+5.63</strong>)</td>
+<td style="text-align:center">21.17</td>
+<td style="text-align:center">23.09</td>
+<td style="text-align:center">24.53</td>
+<td style="text-align:center">23.00</td>
+<td style="text-align:center">24.99</td>
+</tr>
+</tbody>
+</table>
+<h4 id="6-zero-shot-hoi-detection">6) Zero-Shot HOI detection:</h4>
+<h5 id="unseen-action-object-combination-scenario-uc">Unseen action-object combination scenario (UC)</h5>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Method</th>
+<th style="text-align:center">Pub</th>
+<th style="text-align:center">Detector</th>
+<th style="text-align:center">Unseen(def)</th>
+<th style="text-align:center">Seen(def)</th>
+<th style="text-align:center">Full(def)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><a href="http://vision.stanford.edu/pdf/shen2018wacv.pdf">Shen et al.</a></td>
+<td style="text-align:center">WACV2018</td>
+<td style="text-align:center">COCO</td>
+<td style="text-align:center">5.62</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">6.26</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/1904.03181.pdf">Functional</a></td>
+<td style="text-align:center">AAAI2020</td>
+<td style="text-align:center">HICO-DET</td>
+<td style="text-align:center">11.31 ± 1.03</td>
+<td style="text-align:center">12.74 ± 0.34</td>
+<td style="text-align:center">12.45 ± 0.16</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/yeliudev/ConsNet">ConsNet</a></td>
+<td style="text-align:center">ACMMM2020</td>
+<td style="text-align:center">COCO</td>
+<td style="text-align:center">16.99 ± 1.67</td>
+<td style="text-align:center">20.51 ± 0.62</td>
+<td style="text-align:center">19.81 ± 0.32</td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/zhihou7/VCL">VCL</a> (NF-UC)</td>
+<td style="text-align:center">ECCV2020</td>
+<td style="text-align:center">HICO-DET</td>
+<td style="text-align:center">16.22</td>
+<td style="text-align:center">18.52</td>
+<td style="text-align:center">18.06</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/zhihou7/HOI-CL">ATL(w/ COCO)</a> ((NF-UC))</td>
+<td style="text-align:center">CVPR2021</td>
+<td style="text-align:center">HICO-DET</td>
+<td style="text-align:center">18.25</td>
+<td style="text-align:center">18.78</td>
+<td style="text-align:center">18.67</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/zhihou7/FCL">FCL</a> (NF-UC)</td>
+<td style="text-align:center">CVPR2021</td>
+<td style="text-align:center">HICO-DET</td>
+<td style="text-align:center">18.66</td>
+<td style="text-align:center">19.55</td>
+<td style="text-align:center">19.37</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/2203.14272">SCL</a></td>
+<td style="text-align:center">arxiv</td>
+<td style="text-align:center">HICO-DET</td>
+<td style="text-align:center">21.73</td>
+<td style="text-align:center">25.00</td>
+<td style="text-align:center"><strong>24.34</strong></td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/2203.13954.pdf">GEN-VLKT*</a>(NF-UC)</td>
+<td style="text-align:center">CVPR2022</td>
+<td style="text-align:center">HICO-DET</td>
+<td style="text-align:center"><strong>25.05</strong></td>
+<td style="text-align:center"><strong>23.38</strong></td>
+<td style="text-align:center">23.71</td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/zhihou7/VCL">VCL</a> (RF-UC)</td>
+<td style="text-align:center">ECCV2020</td>
+<td style="text-align:center">HICO-DET</td>
+<td style="text-align:center">10.06</td>
+<td style="text-align:center">24.28</td>
+<td style="text-align:center">21.43</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/zhihou7/HOI-CL">ATL(w/ COCO)</a> ((RF-UC))</td>
+<td style="text-align:center">CVPR2021</td>
+<td style="text-align:center">HICO-DET</td>
+<td style="text-align:center">9.18</td>
+<td style="text-align:center">24.67</td>
+<td style="text-align:center">21.57</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/zhihou7/FCL">FCL</a> (RF-UC)</td>
+<td style="text-align:center">CVPR2021</td>
+<td style="text-align:center">HICO-DET</td>
+<td style="text-align:center">13.16</td>
+<td style="text-align:center">24.23</td>
+<td style="text-align:center">22.01</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/2203.14272">SCL</a>(RF-UC)</td>
+<td style="text-align:center">arxiv</td>
+<td style="text-align:center">HICO-DET</td>
+<td style="text-align:center">19.07</td>
+<td style="text-align:center">30.39</td>
+<td style="text-align:center">28.08</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/2203.13954.pdf">GEN-VLKT*</a>(RF-UC)</td>
+<td style="text-align:center">CVPR2022</td>
+<td style="text-align:center">HICO-DET</td>
+<td style="text-align:center"><strong>21.36</strong></td>
+<td style="text-align:center"><strong>32.91</strong></td>
+<td style="text-align:center"><strong>30.56</strong></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>* indicates large Visual-Language model pretraining, \eg, CLIP.</li>
+<li>For the details of the setting, please refer to corresponding publications. This is not officially published and might miss some publications. Please find the corresponding publications.</li>
+</ul>
+<h5 id="unseen-object-scenario-uo">Unseen object scenario (UO)</h5>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Method</th>
+<th style="text-align:center">Pub</th>
+<th style="text-align:center">Detector</th>
+<th style="text-align:center">Full(def)</th>
+<th style="text-align:center">Seen(def)</th>
+<th style="text-align:center">Unseen(def)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/1904.03181.pdf">Functional</a></td>
+<td style="text-align:center">AAAI2020</td>
+<td style="text-align:center">HICO-DET</td>
+<td style="text-align:center">13.84</td>
+<td style="text-align:center">14.36</td>
+<td style="text-align:center">11.22</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/zhihou7/FCL">FCL</a></td>
+<td style="text-align:center">CVPR2021</td>
+<td style="text-align:center">HICO-DET</td>
+<td style="text-align:center">19.87</td>
+<td style="text-align:center">20.74</td>
+<td style="text-align:center">15.54</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/yeliudev/ConsNet">ConsNet</a></td>
+<td style="text-align:center">ACMMM2020</td>
+<td style="text-align:center">COCO</td>
+<td style="text-align:center"><strong>20.71</strong></td>
+<td style="text-align:center"><strong>20.99</strong></td>
+<td style="text-align:center"><strong>19.27</strong></td>
+</tr>
+</tbody>
+</table>
+<h5 id="unseen-action-scenario-ua">Unseen action scenario (UA)</h5>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Method</th>
+<th style="text-align:center">Pub</th>
+<th style="text-align:center">Detector</th>
+<th style="text-align:center">Full(def)</th>
+<th style="text-align:center">Seen(def)</th>
+<th style="text-align:center">Unseen(def)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><a href="https://github.com/yeliudev/ConsNet">ConsNet</a></td>
+<td style="text-align:center">ACMMM2020</td>
+<td style="text-align:center">COCO</td>
+<td style="text-align:center"><strong>19.04</strong></td>
+<td style="text-align:center"><strong>20.02</strong></td>
+<td style="text-align:center"><strong>14.12</strong></td>
+</tr>
+</tbody>
+</table>
+<h5 id="another-setting">Another setting</h5>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Method</th>
+<th style="text-align:center">Pub</th>
+<th style="text-align:center">Unseen</th>
+<th style="text-align:center">Seen</th>
+<th style="text-align:center">Full</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><a href="http://vision.stanford.edu/pdf/shen2018wacv.pdf">Shen et. al.</a></td>
+<td style="text-align:center">WACV2018</td>
+<td style="text-align:center">5.62</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">6.26</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/1904.03181.pdf">Functional</a></td>
+<td style="text-align:center">AAAI2020</td>
+<td style="text-align:center">10.93</td>
+<td style="text-align:center">12.60</td>
+<td style="text-align:center">12.26</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/zhihou7/VCL">VCL</a></td>
+<td style="text-align:center">ECCV2020</td>
+<td style="text-align:center">10.06</td>
+<td style="text-align:center">24.28</td>
+<td style="text-align:center">21.43</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/zhihou7/HOI-CL">ATL</a></td>
+<td style="text-align:center">CVPR2021</td>
+<td style="text-align:center">9.18</td>
+<td style="text-align:center"><strong>24.67</strong></td>
+<td style="text-align:center">21.57</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/zhihou7/FCL">FCL</a></td>
+<td style="text-align:center">CVPR2021</td>
+<td style="text-align:center">13.16</td>
+<td style="text-align:center">24.23</td>
+<td style="text-align:center">22.01</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/scwangdyd/promting_hoi">THID (w/ CLIP)</a></td>
+<td style="text-align:center">CVPR2022</td>
+<td style="text-align:center"><strong>15.53</strong></td>
+<td style="text-align:center">24.32</td>
+<td style="text-align:center"><strong>22.96</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="ambiguous-hoi"><a href="https://github.com/DirtyHarryLYL/DJ-RN">Ambiguous-HOI</a></h3>
+<h4 id="detector-coco-pre-trained-2">Detector: COCO pre-trained</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Method</th>
+<th style="text-align:center">mAP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><a href="https://github.com/vt-vl-lab/iCAN">iCAN</a></td>
+<td style="text-align:center">8.14</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/DirtyHarryLYL/Transferable-Interactiveness-Network">Interactiveness</a></td>
+<td style="text-align:center">8.22</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/jpeyre/analogy">Analogy(reproduced)</a></td>
+<td style="text-align:center">9.72</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/DirtyHarryLYL/DJ-RN">DJ-RN</a></td>
+<td style="text-align:center">10.37</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/Foruck/OC-Immunity">OC-Immunity</a></td>
+<td style="text-align:center"><strong>10.45</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="swig-hoi"><a href="https://github.com/scwangdyd/large_vocabulary_hoi_detection">SWiG-HOI</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Method</th>
+<th style="text-align:center">Pub</th>
+<th style="text-align:center">Non-Rare</th>
+<th style="text-align:center">Unseen</th>
+<th style="text-align:center">Seen</th>
+<th style="text-align:center">Full</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><a href="https://prior.allenai.org/projects/gsr">JSR</a></td>
+<td style="text-align:center">ECCV2020</td>
+<td style="text-align:center">10.01</td>
+<td style="text-align:center">6.10</td>
+<td style="text-align:center">2.34</td>
+<td style="text-align:center">6.08</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/scwangdyd/">CHOID</a></td>
+<td style="text-align:center">ICCV2021</td>
+<td style="text-align:center">10.93</td>
+<td style="text-align:center">6.63</td>
+<td style="text-align:center">2.64</td>
+<td style="text-align:center">6.64</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/hitachi-rd-cv/qpic">QPIC</a></td>
+<td style="text-align:center">CVPR2021</td>
+<td style="text-align:center">16.95</td>
+<td style="text-align:center">10.84</td>
+<td style="text-align:center">6.21</td>
+<td style="text-align:center">11.12</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/scwangdyd/promting_hoi">THID (w/ CLIP)</a></td>
+<td style="text-align:center">CVPR2022</td>
+<td style="text-align:center"><strong>17.67</strong></td>
+<td style="text-align:center"><strong>12.82</strong></td>
+<td style="text-align:center"><strong>10.04</strong></td>
+<td style="text-align:center"><strong>13.26</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="v-coco-scenario1">V-COCO: Scenario1</h3>
+<h4 id="1-detector-coco-pre-trained-or-one-stage-detector">1) Detector: COCO pre-trained or one-stage detector</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Method</th>
+<th style="text-align:center">Pub</th>
+<th style="text-align:center">AP(role)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/1505.04474.pdf">Gupta et al.</a></td>
+<td style="text-align:center">arXiv</td>
+<td style="text-align:center">31.8</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/1704.07333.pdf">InteractNet</a></td>
+<td style="text-align:center">CVPR2018</td>
+<td style="text-align:center">40.0</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/1903.06355.pdf">Turbo</a></td>
+<td style="text-align:center">AAAI2019</td>
+<td style="text-align:center">42.0</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/1808.07962.pdf">GPNN</a></td>
+<td style="text-align:center">ECCV2018</td>
+<td style="text-align:center">44.0</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/1808.10437.pdf">iCAN</a></td>
+<td style="text-align:center">BMVC2018</td>
+<td style="text-align:center">45.3</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://www-users.cs.umn.edu/~qzhao/publications/pdf/xu2019cvpr.pdf">Xu et. al</a></td>
+<td style="text-align:center">CVPR2019</td>
+<td style="text-align:center">45.9</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="http://openaccess.thecvf.com/content_ICCV_2019/papers/Wang_Deep_Contextual_Attention_for_Human-Object_Interaction_Detection_ICCV_2019_paper.pdf">Wang et. al.</a></td>
+<td style="text-align:center">ICCV2019</td>
+<td style="text-align:center">47.3</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="http://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123600494.pdf">UniDet</a></td>
+<td style="text-align:center">ECCV2020</td>
+<td style="text-align:center">47.5</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/1811.08264.pdf">Interactiveness</a></td>
+<td style="text-align:center">CVPR2019</td>
+<td style="text-align:center">47.8</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://www.ijcai.org/Proceedings/2020/0154.pdf">Lin et. al</a></td>
+<td style="text-align:center">IJCAI2020</td>
+<td style="text-align:center">48.1</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/zhihou7/VCL">VCL</a></td>
+<td style="text-align:center">ECCV2020</td>
+<td style="text-align:center">48.3</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/2003.04262.pdf">Zhou et. al.</a></td>
+<td style="text-align:center">CVPR2020</td>
+<td style="text-align:center">48.9</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/2007.06925.pdf">In-GraphNet</a></td>
+<td style="text-align:center">IJCAI-PRICAI 2020</td>
+<td style="text-align:center">48.9</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/DirtyHarryLYL/Transferable-Interactiveness-Network">Interactiveness-optimized</a></td>
+<td style="text-align:center">CVPR2019</td>
+<td style="text-align:center">49.0</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/DirtyHarryLYL/Transferable-Interactiveness-Network">TIN-PAMI</a></td>
+<td style="text-align:center">TAPMI2021</td>
+<td style="text-align:center">49.1</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/2003.14023.pdf">IP-Net</a></td>
+<td style="text-align:center">CVPR2020</td>
+<td style="text-align:center">51.0</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/vt-vl-lab/DRG">DRG</a></td>
+<td style="text-align:center">ECCV2020</td>
+<td style="text-align:center">51.0</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/2202.11998.pdf">RGBM</a></td>
+<td style="text-align:center">arXiv2022</td>
+<td style="text-align:center">51.7</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/2003.05541.pdf">VSGNet</a></td>
+<td style="text-align:center">CVPR2020</td>
+<td style="text-align:center">51.8</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/birlrobotics/PMN">PMN</a></td>
+<td style="text-align:center">arXiv</td>
+<td style="text-align:center">51.8</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/1909.08453.pdf">PMFNet</a></td>
+<td style="text-align:center">ICCV2019</td>
+<td style="text-align:center">52.0</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/2105.03089.pdf">Liu et.al.</a></td>
+<td style="text-align:center">arXiv</td>
+<td style="text-align:center">52.28</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/zhihou7/FCL">FCL</a></td>
+<td style="text-align:center">CVPR2021</td>
+<td style="text-align:center">52.35</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/MuchHair/PD-Net">PD-Net</a></td>
+<td style="text-align:center">ECCV2020</td>
+<td style="text-align:center">52.6</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="http://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123620239.pdf">Wang et.al.</a></td>
+<td style="text-align:center">ECCV2020</td>
+<td style="text-align:center">52.7</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://link.springer.com/content/pdf/10.1007/s41095-020-0188-2.pdf">PFNet</a></td>
+<td style="text-align:center">CVM</td>
+<td style="text-align:center">52.8</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/bbepoch/HoiTransformer">Zou et al.</a></td>
+<td style="text-align:center">CVPR2021</td>
+<td style="text-align:center">52.9</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://ieeexplore.ieee.org/ielx7/9099125/9102711/09102755.pdf">SIGN</a></td>
+<td style="text-align:center">ICME2020</td>
+<td style="text-align:center">53.1</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/Dong-JinKim/ActionCooccurrencePriors/">ACP</a></td>
+<td style="text-align:center">ECCV2020</td>
+<td style="text-align:center">52.98 (53.23)</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="http://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123590239.pdf">FCMNet</a></td>
+<td style="text-align:center">ECCV2020</td>
+<td style="text-align:center">53.1</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=9552553">HRNet</a></td>
+<td style="text-align:center">TIP2021</td>
+<td style="text-align:center">53.1</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/2207.05733.pdf">SGCN4HOI</a></td>
+<td style="text-align:center">arXiv2022</td>
+<td style="text-align:center">53.1</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/2008.06254.pdf">ConsNet</a></td>
+<td style="text-align:center">ACMMM2020</td>
+<td style="text-align:center">53.2</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/DirtyHarryLYL/HAKE-Action-Torch/tree/IDN-(Integrating-Decomposing-Network)">IDN</a></td>
+<td style="text-align:center">NeurIPS2020</td>
+<td style="text-align:center">53.3</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/2108.08584.pdf">SG2HOI</a></td>
+<td style="text-align:center">ICCV2021</td>
+<td style="text-align:center">53.3</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9360596">OSGNet</a></td>
+<td style="text-align:center">IEEE Access</td>
+<td style="text-align:center">53.43</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/2012.12510.pdf">SABRA-Res50</a></td>
+<td style="text-align:center">arXiv</td>
+<td style="text-align:center">53.57</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/2207.07979.pdf">K-BAN</a></td>
+<td style="text-align:center">arXiv2022</td>
+<td style="text-align:center">53.70</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://ieeexplore.ieee.org/document/9489275">IPGN</a></td>
+<td style="text-align:center">TIP2021</td>
+<td style="text-align:center">53.79</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/yoyomimi/AS-Net">AS-Net</a></td>
+<td style="text-align:center">CVPR2021</td>
+<td style="text-align:center">53.9</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/2104.15015.pdf">RR-Net</a></td>
+<td style="text-align:center">arXiv</td>
+<td style="text-align:center">54.2</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/fredzzhang/spatially-conditioned-graphs">SCG</a></td>
+<td style="text-align:center">ICCV2021</td>
+<td style="text-align:center">54.2</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/2012.12510.pdf">SABRA-Res50FPN</a></td>
+<td style="text-align:center">arXiv</td>
+<td style="text-align:center">54.69</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/SherlockHolmes221/GGNet">GGNet</a></td>
+<td style="text-align:center">CVPR2021</td>
+<td style="text-align:center">54.7</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://dl.acm.org/doi/pdf/10.1145/3372278.3390671">MLCNet</a></td>
+<td style="text-align:center">ICMR2020</td>
+<td style="text-align:center">55.2</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/kakaobrain/HOTR">HOTR</a></td>
+<td style="text-align:center">CVPR2021</td>
+<td style="text-align:center">55.2</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/2010.01005.pdf">DIRV</a></td>
+<td style="text-align:center">AAAI2021</td>
+<td style="text-align:center">56.1</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/2012.12510.pdf">SABRA-Res152</a></td>
+<td style="text-align:center">arXiv</td>
+<td style="text-align:center">56.62</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/2112.07383.pdf">PhraseHOI</a></td>
+<td style="text-align:center">AAAI2022</td>
+<td style="text-align:center">57.4</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/UCSB-VRL/GTNet">GTNet</a></td>
+<td style="text-align:center">arXiv</td>
+<td style="text-align:center">58.29</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/hitachi-rd-cv/qpic">QPIC-Res101</a></td>
+<td style="text-align:center">CVPR2021</td>
+<td style="text-align:center">58.3</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/hitachi-rd-cv/qpic">QPIC-Res50</a></td>
+<td style="text-align:center">CVPR2021</td>
+<td style="text-align:center">58.8</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/2204.04911.pdf">CATN (w/ fastText)</a></td>
+<td style="text-align:center">arXiv2022</td>
+<td style="text-align:center">60.1</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/2203.10537.pdf">Iwin</a></td>
+<td style="text-align:center">arXiv2022</td>
+<td style="text-align:center">60.85</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/fredzzhang/upt">UPT-ResNet-101-DC5</a></td>
+<td style="text-align:center">arXiv2021</td>
+<td style="text-align:center">61.3</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/2207.01869.pdf">SDT</a></td>
+<td style="text-align:center">arXiv2022</td>
+<td style="text-align:center">61.8</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/2203.14709.pdf">MSTR</a></td>
+<td style="text-align:center">CVPR2022</td>
+<td style="text-align:center">62.0</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/Foruck/Interactiveness-Field">IF</a></td>
+<td style="text-align:center">CVPR2022</td>
+<td style="text-align:center">63.0</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/enlighten0707/Body-Part-Map-for-Interactiveness">ParMap</a></td>
+<td style="text-align:center">ECCV2022</td>
+<td style="text-align:center">63.0</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/2204.04836.pdf">QPIC-CPC</a></td>
+<td style="text-align:center">CVPR2022</td>
+<td style="text-align:center">63.1</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/SherlockHolmes221/DOQ">DOQ</a></td>
+<td style="text-align:center">CVPR2022</td>
+<td style="text-align:center">63.5</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/YueLiao/gen-vlkt">GEN-VLKT (w/ CLIP)</a></td>
+<td style="text-align:center">CVPR2022</td>
+<td style="text-align:center">63.58</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/2207.05293.pdf">QPIC+HQM</a></td>
+<td style="text-align:center">ECCV2022</td>
+<td style="text-align:center">63.6</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/YueLiao/CDN">CDN</a></td>
+<td style="text-align:center">NeurIPS2021</td>
+<td style="text-align:center">63.91</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/2204.00746.pdf">SSRT</a></td>
+<td style="text-align:center">CVPR2022</td>
+<td style="text-align:center">65.0</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/zyong812/STIP">STIP</a></td>
+<td style="text-align:center">CVPR2022</td>
+<td style="text-align:center">66.0</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/2204.09290.pdf">DT</a></td>
+<td style="text-align:center">CVPR2022</td>
+<td style="text-align:center"><strong>66.2</strong></td>
+</tr>
+</tbody>
+</table>
+<h4 id="2-enhanced-with-hake">2) Enhanced with HAKE:</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Method</th>
+<th style="text-align:center">Pub</th>
+<th style="text-align:center">AP(role)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/1808.10437.pdf">iCAN</a></td>
+<td style="text-align:center">CVPR2019</td>
+<td style="text-align:center">45.3</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/DirtyHarryLYL/HAKE-Action/tree/Instance-level-HAKE-Action">iCAN + HAKE-Large</a> (transfer learning)</td>
+<td style="text-align:center">CVPR2020</td>
+<td style="text-align:center">49.2 (<strong>+3.9</strong>)</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/1811.08264.pdf">Interactiveness</a></td>
+<td style="text-align:center">CVPR2019</td>
+<td style="text-align:center">47.8</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/DirtyHarryLYL/HAKE-Action/tree/Instance-level-HAKE-Action">Interactiveness + HAKE-Large</a> (transfer learning)</td>
+<td style="text-align:center">CVPR2020</td>
+<td style="text-align:center">51.0 (<strong>+3.2</strong>)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="hoi-coco"><a href="https://github.com/zhihou7/HOI-CL">HOI-COCO</a>:</h3>
+<p>based on V-COCO</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Method</th>
+<th style="text-align:center">Pub</th>
+<th style="text-align:center">Full</th>
+<th style="text-align:center">Seen</th>
+<th style="text-align:center">Unseen</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><a href="https://github.com/zhihou7/VCL">VCL</a></td>
+<td style="text-align:center">ECCV2020</td>
+<td style="text-align:center">23.53</td>
+<td style="text-align:center">8.29</td>
+<td style="text-align:center">35.36</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/zhihou7/HOI-CL">ATL(w/ COCO)</a></td>
+<td style="text-align:center">CVPR2021</td>
+<td style="text-align:center">23.40</td>
+<td style="text-align:center">8.01</td>
+<td style="text-align:center">35.34</td>
+</tr>
+</tbody>
+</table>
+<h3 id="hico">HICO</h3>
+<h4 id="1-default">1) Default</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Method</th>
+<th style="text-align:center">mAP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/1505.01197.pdf">R*CNN</a></td>
+<td style="text-align:center">28.5</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/1711.01467.pdf">Girdhar et.al.</a></td>
+<td style="text-align:center">34.6</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/1604.04808.pdf">Mallya et.al.</a></td>
+<td style="text-align:center">36.1</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="http://openaccess.thecvf.com/content_ECCV_2018/papers/Haoshu_Fang_Pairwise_Body-Part_Attention_ECCV_2018_paper.pdf">Pairwise</a></td>
+<td style="text-align:center">39.9</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/2204.11167.pdf">RelViT</a></td>
+<td style="text-align:center">40.12</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/2107.13083.pdf">DEFR-base</a></td>
+<td style="text-align:center">44.1</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/2107.13083.pdf">DEFR-CLIP</a></td>
+<td style="text-align:center">60.5</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/2112.06392.pdf">DEFR/16 CLIP</a></td>
+<td style="text-align:center"><strong>65.6</strong></td>
+</tr>
+</tbody>
+</table>
+<h4 id="2-enhanced-with-hake-2">2) Enhanced with HAKE:</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Method</th>
+<th style="text-align:center">mAP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><a href="https://arxiv.org/pdf/1604.04808.pdf">Mallya et.al.</a></td>
+<td style="text-align:center">36.1</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/DirtyHarryLYL/HAKE-Action/tree/Image-level-HAKE-Action">Mallya et.al.+HAKE-HICO</a></td>
+<td style="text-align:center">45.0 (<strong>+8.9</strong>)</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="http://openaccess.thecvf.com/content_ECCV_2018/papers/Haoshu_Fang_Pairwise_Body-Part_Attention_ECCV_2018_paper.pdf">Pairwise</a></td>
+<td style="text-align:center">39.9</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/DirtyHarryLYL/HAKE-Action/tree/Image-level-HAKE-Action">Pairwise+HAKE-HICO</a></td>
+<td style="text-align:center">45.9 (<strong>+6.0</strong>)</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://github.com/DirtyHarryLYL/HAKE-Action/tree/Image-level-HAKE-Action">Pairwise+HAKE-Large</a></td>
+<td style="text-align:center">46.3 (<strong>+6.4</strong>)</td>
+</tr>
+</tbody>
+</table>
+
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://alex551781.github.io/post/hello-gridea/">
+                  <h3 class="post-title">
+                    Hello Gridea
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>
